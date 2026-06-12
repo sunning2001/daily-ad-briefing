@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>每日广告案例早报 — 新鲜全球广告案例精选</title>
+<meta name="description" content="每日3个新鲜广告案例+1个经典案例，精炼拆解商业目标、核心洞察与创意构思。广告人早八点必读。">
+<meta name="keywords" content="广告案例,广告早报,营销案例,广告创意,案例拆解,品牌营销">
+<meta property="og:title" content="每日广告案例早报">
+<meta property="og:description" content="每日3个新鲜广告案例精炼拆解。广告人早八点必读。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  --bg: #0f0f0f;
+  --surface: #1a1a1a;
+  --surface2: #242424;
+  --border: #2a2a2a;
+  --text: #e8e8e8;
+  --text2: #999;
+  --text3: #666;
+  --accent: #f0b90b;
+  --accent2: #e6a800;
+  --tag-bg: rgba(240, 185, 11, 0.1);
+  --tag-text: #f0b90b;
+  --card-radius: 12px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: linear-gradient(180deg, #1a1300 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--border);
+}
+.hero h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+.hero h1 span { color: var(--accent); }
+.hero .subtitle {
+  color: var(--text2);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.hero .badge {
+  display: inline-block;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.nav-bar .nav-date {
+  font-size: 18px;
+  font-weight: 600;
+}
+.nav-bar .nav-arrows {
+  display: flex;
+  gap: 8px;
+}
+.nav-bar .nav-arrows button {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s;
+}
+.nav-bar .nav-arrows button:hover { background: var(--surface2); }
+.nav-bar .nav-arrows button:disabled { opacity: 0.3; cursor: not-allowed; }
+
+/* Case Card */
+.case-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: border-color .2s;
+}
+.case-card:hover { border-color: #333; }
+
+.case-card .case-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.case-card .case-title .case-num {
+  color: var(--accent);
+  margin-right: 8px;
+}
+.case-card .case-meta {
+  color: var(--text3);
+  font-size: 13px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.case-card .case-meta .tag {
+  background: var(--surface2);
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.case-detail {
+  display: grid;
+  gap: 8px;
+}
+.case-detail .field {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.case-detail .field .label {
+  color: var(--text3);
+  font-size: 12px;
+  display: block;
+  margin-bottom: 2px;
+}
+.case-detail .field .link {
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-all;
+  font-size: 13px;
+}
+.case-detail .field .link:hover { text-decoration: underline; }
+
+/* Section header */
+.section-header {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text2);
+  margin: 28px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-header .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.section-header .dot.fresh { background: #4ade80; }
+.section-header .dot.classic { background: #f97316; }
+
+/* Quote */
+.quote-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  padding: 24px;
+  margin: 24px 0;
+  text-align: center;
+}
+.quote-section .quote-text {
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+.quote-section .quote-author {
+  color: var(--text3);
+  font-size: 13px;
+}
+
+/* CTA section */
+.cta-section {
+  margin: 40px 0;
+  padding: 32px 24px;
+  background: linear-gradient(135deg, var(--surface), var(--surface2));
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  text-align: center;
+}
+.cta-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.cta-section p {
+  color: var(--text2);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.cta-section .cta-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #000;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all .2s;
+  cursor: default;
+}
+.cta-section .cta-btn:hover { background: var(--accent2); }
+.cta-section .cta-note {
+  color: var(--text3);
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 32px 0;
+  color: var(--text3);
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+}
+
+/* Loading / Empty */
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text3);
+}
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text3);
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+  .hero { padding: 40px 16px 28px; }
+  .hero h1 { font-size: 24px; }
+  .case-card { padding: 16px; }
+  .case-card .case-title { font-size: 16px; }
+  .container { padding: 0 14px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <h1>📰 每日广告案例<span>早报</span></h1>
+  <p class="subtitle">每天3个新鲜案例 + 1个经典案例 · 精炼拆解 · 广告人早八点必读</p>
+  <span class="badge">每日更新 · 免费预览</span>
+</div>
+
+<div class="container">
+
+<!-- Navigation -->
+<div class="nav-bar">
+  <div class="nav-date" id="currentDate">—</div>
+  <div class="nav-arrows">
+    <button id="prevBtn" onclick="navigate(-1)">◂</button>
+    <button id="nextBtn" onclick="navigate(1)">▸</button>
+  </div>
+</div>
+
+<!-- Content -->
+<div id="contentArea">
+  <div class="loading">加载中...</div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h3>🔒 订阅获取完整每日推送</h3>
+  <p>每日早八点准时送达，不错过任何一个精彩案例。</p>
+  <div class="cta-btn">订阅入口 · 即将开放</div>
+  <p class="cta-note">当前免费预览展示，正式订阅即将上线</p>
+</div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>每日广告案例早报 &copy; &mdash; 广告案例精选与拆解</p>
+</div>
+
+<script>
+// ===================== DATA =====================
+const BRIEFINGS = {};
+
+BRIEFINGS['2026-06-12'] = {"date":"2026-06-12","fresh":[{"num":1,"title":"案例数据加载中","brand":"—","agency":"—","goal":"—","problem":"—","insight":"—","task":"—","idea":"—","link":"#"}],"classic":{"num":"—","title":"经典案例加载中","brand":"—","agency":"—","goal":"—","problem":"—","insight":"—","task":"—","idea":"—","link":"#"},"quote":{"text":"—","author":"—"}};
+
+BRIEFINGS['2026-06-10'] = {
+  "date":"2026-06-10",
+  "fresh":[
+    {
+      "num":1,
+      "title":"Lego — The Play Maker",
+      "brand":"Lego · 玩具",
+      "agency":"Our LEGO Agency (OLA)",
+      "goal":"推广「永不停止玩乐」品牌理念，以Jason Momoa号召全球家庭重拾共同玩乐的快乐与力量。",
+      "problem":"全球44%家庭玩乐时间不足，数字设备侵占亲子互动，如何让家长意识到玩乐不是浪费而是刚需？",
+      "insight":"每周仅5小时家庭玩乐即可显著提升幸福感——比刷手机时间还少，玩乐是最低成本的幸福投资。",
+      "task":"以Momoa明星效应打破「玩=幼稚」偏见，弥合44%家庭的「玩乐鸿沟」，让玩乐成为现代家庭的新仪式。",
+      "idea":"Momoa化身「玩乐大师」拍PSA式短片，核心符号为两块积木的「咔嗒」声——简单动作即打开创意与连接之门。",
+      "link":"https://www.adsoftheworld.com/campaigns/the-play-maker"
+    },
+    {
+      "num":2,
+      "title":"Uber Eats — Gordon Ramsay Stops You From Cooking",
+      "brand":"Uber Eats · 外卖配送",
+      "agency":"Mother",
+      "goal":"推出首个全球外卖campaign，借世界杯在17个市场建立「看球不煮饭，叫Uber Eats」的品牌习惯。",
+      "problem":"世界杯期间没人想错过一秒比赛，但吃饭是刚需——品牌如何嵌入「看球与做饭不可兼得」的消费场景？",
+      "insight":"当比赛开始没人想进厨房——让世界最知名厨师本人告诉你「别做饭」，是荒诞又完美的行为反转。",
+      "task":"以Gordon Ramsay暴脾气人设制造反差喜剧，让「世界杯叫外卖」成为全球球迷的本能选择。",
+      "idea":"Ramsay拎Uber Eats绿色袋闯入厨房，标志性咆哮驱赶人们放下锅铲——世界最著名厨师在阻止烹饪，荒诞引爆病毒传播。",
+      "link":"https://www.adweek.com/creativity/gordon-ramsay-wants-fans-to-order-uber-eats-not-cook-during-the-world-cup/"
+    },
+    {
+      "num":3,
+      "title":"武夷山国家公园 — 武夷山，啥都能删",
+      "brand":"武夷山国家公园 · 文旅",
+      "agency":"IDEAinside 艾迪因赛",
+      "goal":"打造年轻化文旅宣传片，吸引都市打工人前往武夷山「删除焦虑」，驱动五一出行决策。",
+      "problem":"传统文旅片说教味重与年轻人距离远，如何让「去武夷山」成为主动向往而非被动接收的广告信息？",
+      "insight":"打工人最想「删除」的是一切疲惫——武夷山94.5%植被覆盖率就是最强的「绿色充电宝」。",
+      "task":"以「魔戒能删万物但需绿色能量」的超现实设定，把武夷山植入年轻人日常语境，降低出行决策门槛。",
+      "idea":"打工人捡到「啥都能删」魔戒，删掉咖啡渍会议方案后系统提示「绿色值不足」——答案指向武夷山。线下设「喊删」装置互动。",
+      "link":"https://www.digitaling.com/projects/367646.html"
+    }
+  ],
+  "classic":{
+    "title":"Old Spice — The Man Your Man Could Smell Like（2010）",
+    "brand":"Old Spice · 男士护理",
+    "agency":"Wieden+Kennedy",
+    "goal":"扭转品牌老化危机，让被视为「爷爷辈」的Old Spice重新赢得年轻男性消费者。",
+    "problem":"Old Spice=过时代名词，且男性沐浴露购买决策常由女性伴侣主导——如何一击同时触达两群受众？",
+    "insight":"男士护理的真正购买决策者常是伴侣——「你的男人该闻起来像……」比直接对男性说教奏效百倍。",
+    "task":"以一支颠覆性别营销规则的超级碗广告，让Old Spice从「你爸用的」变成全网模仿的文化现象。",
+    "idea":"Isaiah Mustafa半裸出镜，在浴室、帆船、马背间无缝切换，磁性低语「看看你的男人，再看看我」。24小时极速拍摄引爆社交。",
+    "link":"https://en.wikipedia.org/wiki/The_Man_Your_Man_Could_Smell_Like"
+  },
+  "quote":{
+    "text":"\"Nobody reads ads. People read what interests them. Sometimes it's an ad.\"",
+    "author":"Howard Gossage（广告界苏格拉底）"
+  }
+};
+
+BRIEFINGS['2026-06-09'] = {
+  "date":"2026-06-09",
+  "fresh":[
+    {
+      "num":1,
+      "title":"Raylo — Something Better Always Comes Along",
+      "brand":"Raylo · 电子设备订阅",
+      "agency":"Stink Studios",
+      "goal":"为Raylo电子订阅推出新TV campaign，驱动品牌认知与订阅用户增长。",
+      "problem":"消费者习惯持有过时设备，如何让升级换代显得有吸引力而非浪费？",
+      "insight":"与旧科技\"分手\"的情感体验酷似结束恋情——人们留着不是因为好用，是因为习惯。",
+      "task":"用分手隐喻打破电子品\"耐用品\"认知，让升级成为一场情绪解放。",
+      "idea":"一对情侣在咖啡馆分手，女方控诉男方\"过时、记性差、续航短\"——观众最后发现她吐槽的是旧手机。",
+      "link":"https://www.adsoftheworld.com/campaigns/something-better-always-comes-along"
+    },
+    {
+      "num":2,
+      "title":"Nike — Rip the Script",
+      "brand":"Nike · 运动",
+      "agency":"Wieden+Kennedy",
+      "goal":"借2026世界杯重振Nike品牌势能，以内容生态替代传统广告投放逻辑。",
+      "problem":"世界杯营销内卷严重，如何让campaign超越广告，成为持续12周的文化事件？",
+      "insight":"足球的魅力来自本能与不可预测——最好的营销不是按剧本走，是放手让创造力发生。",
+      "task":"以6分钟短片为锚点，打造12周跨平台内容宇宙，覆盖铁杆球迷与足球新人。",
+      "idea":"30+巨星在好莱坞片场推翻导演剧本接管拍摄，用TikTok式快剪与彩蛋传达\"足球不需要剧本\"。",
+      "link":"https://www.campaignlive.com/article/nike-rips-script-writes-new-chapter-epic-2026-world-cup-campaign/1960540"
+    },
+    {
+      "num":3,
+      "title":"食族人 × 宋雨琦 — 辣出自我 呔破规则",
+      "brand":"食族人 · 快消速食",
+      "agency":"赞意",
+      "goal":"品牌主张从\"不爽就嗦\"升级至\"做自己\"，完成代言人从王琳凯到宋雨琦的无缝切换。",
+      "problem":"如何让代言人更换不止是流量置换，而是品牌精神的递进与深化？",
+      "insight":"当下年轻人最大的\"不爽\"不是外部挫折，而是不确定时代里很难真正\"做自己\"。",
+      "task":"把宋雨琦\"练习生到舞台中央\"的真实故事融入品牌，让口号变成可感知的生活态度。",
+      "idea":"一周半极速交付，以宋雨琦成长经历为脚本，用\"辣出自我\"诠释她对世界最锋利的回答。",
+      "link":"https://m.adquan.com/creative/detail/360971"
+    }
+  ],
+  "classic":{
+    "title":"Dove — Real Beauty Sketches（真实美丽素描，2013）",
+    "brand":"Dove/多芬 · 个人护理",
+    "agency":"Ogilvy",
+    "goal":"延续\"真实美丽\"品牌主张，在全球引发关于女性自我认知的社会对话。",
+    "problem":"仅2%女性认为自己是美的，广告模特与真实女性之间的巨大鸿沟如何弥合？",
+    "insight":"女性对自己的评价远比他人眼中的她们更苛刻——\"你比你以为的更美\"。",
+    "task":"用一个可参与的社会实验让全球女性重新审视自我认知，输出品牌价值观。",
+    "idea":"请FBI素描师根据女性自述和他人描述分别画像——他人描述的画像总是更美，引发全球热议。",
+    "link":"https://www.digitaling.com/articles/936081.html"
+  },
+  "quote":{
+    "text":"\"If it doesn't sell, it isn't creative.\"",
+    "author":"David Ogilvy（奥美创始人）"
+  }
+};
+
+BRIEFINGS['2026-06-08'] = {
+  "date":"2026-06-08",
+  "fresh":[
+    {
+      "num":1,
+      "title":"Sound Transit — Your Connection is Out There",
+      "brand":"Sound Transit · 公共交通",
+      "agency":"Copacino Fujikado",
+      "goal":"推广西雅图新轻轨Crosslake Connection开通，提升市民对新线路的认知与使用率，迎接FIFA世界杯客流。",
+      "problem":"公共交通开通新闻枯燥难传播，如何让一条轻轨线路的工程成就变成全市热议话题？",
+      "insight":"这条轻轨建在世界首座浮桥之上——工程难度逆天到连外星文明都会表示敬佩。",
+      "task":"以幽默科幻叙事让市民用全新眼光看待日常通勤，在世界杯前提升公共交通好感与使用意愿。",
+      "idea":"外星高管在办公室认真分析Sound Transit成就，一边震惊于人类工程能力一边自尊心受挫。户外、平面、社交全面铺开——连外星人都来取经了。",
+      "link":"https://www.adsoftheworld.com/campaigns/your-connection-is-out-there"
+    },
+    {
+      "num":2,
+      "title":"Jeep × Marvel — The Original Superheroes",
+      "brand":"Jeep × Marvel · 汽车",
+      "agency":"Highdive / RSA Films",
+      "goal":"借美国250周年国庆与Marvel IP联动，将Jeep从越野工具升级为\"美国精神\"文化符号。",
+      "problem":"汽车爱国营销极易陷入说教与俗套，如何让硬派越野品牌在250周年叙事中既真诚又酷？",
+      "insight":"真正的超级英雄不是漫画角色，而是曾驾驶Jeep奔赴前线的退伍军人——品牌拥有真实英雄故事可讲。",
+      "task":"以一支电影级短片将Jeep全系车型塑造为个性角色，在250周年国庆语境中赢得文化认同。",
+      "idea":"邀请真实退役\"Captain\"在加州干涸湖床驾驶Jeep全系完成高难度越野挑战，导演为每款车设定独特角色性格，用Marvel式视觉语言向真实英雄致敬。",
+      "link":"https://www.shots.net/news/view/jeep-x-marvel-give-us-the-original-superheroes"
+    },
+    {
+      "num":3,
+      "title":"蕉内 — 体感科学十周年",
+      "brand":"蕉内 · DTC内衣/家居服",
+      "agency":"蕉内",
+      "goal":"在品牌十周年之际，将\"舒服\"从营销话术升级为可验证的科学体系，建立品类话语权。",
+      "problem":"人人都在喊\"舒服\"，当这个词被用滥后，如何让消费者相信你的舒服是真的？",
+      "insight":"舒服虽私人且转瞬即逝，却可拆解为温度、湿度、触感、压力、防护五大可量化维度。",
+      "task":"联合中国纺织信息中心发布《体感科学报告》，以学术级严谨将主观感受转化为客观标准。",
+      "idea":"联合中央芭蕾舞团拍摄十周年影片，舞者身体各部位由其他舞者共同组成——\"让身体组成身体\"，隐喻人人共享舒服的权利。",
+      "link":"https://www.digitaling.com/projects/366505.html"
+    }
+  ],
+  "classic":{
+    "title":"Apple — 1984（1984）",
+    "brand":"Apple · 科技",
+    "agency":"Chiat/Day",
+    "goal":"在超级碗发布Macintosh，用一支广告让世界记住这个挑战IBM垄断的新品牌。",
+    "problem":"个人电脑市场被IBM统治，无人知晓的新品牌如何在80秒内宣告一个时代来临？",
+    "insight":"Macintosh不是另一台电脑——它是反抗思想控制、解放个体创造力的武器，科技具有政治隐喻。",
+    "task":"创造史上最轰动的超级碗广告，让产品发布成为全球文化事件而非一场普通发布会。",
+    "idea":"Ridley Scott以奥威尔《1984》为蓝本，女子挥锤砸碎老大哥屏幕，宣告\"1月24日Apple推出Macintosh，1984不会像《1984》。",
+    "link":"https://en.wikipedia.org/wiki/1984_(advertisement)"
+  },
+  "quote":{
+    "text":"\"Properly practiced creativity can make one ad do the work of ten.\"",
+    "author":"Bill Bernbach（DDB创始人，广告创意革命之父）"
+  }
+};
+
+// ===================== APPLICATION =====================
+const dates = Object.keys(BRIEFINGS).sort().reverse();
+let currentIndex = 0;
+
+function renderDate(dateStr) {
+  const data = BRIEFINGS[dateStr];
+  if (!data) {
+    document.getElementById('contentArea').innerHTML = '<div class="empty-state">暂无该日期内容</div>';
+    document.getElementById('currentDate').textContent = dateStr;
+    return;
+  }
+
+  document.getElementById('currentDate').textContent = dateStr;
+  const d = new Date(dateStr);
+  const weekday = ['日','一','二','三','四','五','六'][d.getDay()];
+  document.getElementById('currentDate').textContent = `${dateStr} 周${weekday}`;
+
+  let html = '';
+
+  // 新鲜案例
+  html += '<div class="section-header"><span class="dot fresh"></span> 新鲜案例</div>';
+  data.fresh.forEach(c => {
+    html += `<div class="case-card">
+      <div class="case-title"><span class="case-num">#${c.num}</span>${c.title}</div>
+      <div class="case-meta"><span>${c.brand}</span><span class="tag">${c.agency}</span></div>
+      <div class="case-detail">
+        <div class="field"><span class="label">商业目标</span>${c.goal}</div>
+        <div class="field"><span class="label">核心问题</span>${c.problem}</div>
+        <div class="field"><span class="label">核心洞察</span>${c.insight}</div>
+        <div class="field"><span class="label">传播任务</span>${c.task}</div>
+        <div class="field"><span class="label">创意构思</span>${c.idea}</div>
+        ${c.link ? `<div class="field"><a class="link" href="${c.link}" target="_blank" rel="noopener">🔗 查看原案例 →</a></div>` : ''}
+      </div>
+    </div>`;
+  });
+
+  // 经典案例
+  html += '<div class="section-header"><span class="dot classic"></span> 经典案例</div>';
+  const cls = data.classic;
+  html += `<div class="case-card">
+    <div class="case-title">${cls.title}</div>
+    <div class="case-meta"><span>${cls.brand}</span><span class="tag">${cls.agency}</span></div>
+    <div class="case-detail">
+      <div class="field"><span class="label">商业目标</span>${cls.goal}</div>
+      <div class="field"><span class="label">核心问题</span>${cls.problem}</div>
+      <div class="field"><span class="label">核心洞察</span>${cls.insight}</div>
+      <div class="field"><span class="label">传播任务</span>${cls.task}</div>
+      <div class="field"><span class="label">创意构思</span>${cls.idea}</div>
+      ${cls.link ? `<div class="field"><a class="link" href="${cls.link}" target="_blank" rel="noopener">🔗 查看原案例 →</a></div>` : ''}
+    </div>
+  </div>`;
+
+  // 金句
+  if (data.quote && data.quote.text) {
+    html += `<div class="quote-section">
+      <div class="quote-text">${data.quote.text}</div>
+      <div class="quote-author">—— ${data.quote.author}</div>
+    </div>`;
+  }
+
+  document.getElementById('contentArea').innerHTML = html;
+  updateNavButtons();
+}
+
+function updateNavButtons() {
+  document.getElementById('prevBtn').disabled = currentIndex >= dates.length - 1;
+  document.getElementById('nextBtn').disabled = currentIndex <= 0;
+}
+
+function navigate(dir) {
+  const newIdx = currentIndex - dir;
+  if (newIdx < 0 || newIdx >= dates.length) return;
+  currentIndex = newIdx;
+  renderDate(dates[currentIndex]);
+  window.scrollTo({ top: document.querySelector('.nav-bar').offsetTop - 10, behavior: 'smooth' });
+}
+
+// Init
+renderDate(dates[0]);
+</script>
+</body>
+</html>
