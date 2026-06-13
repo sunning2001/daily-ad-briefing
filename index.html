@@ -311,255 +311,571 @@ body {
 // ===================== DATA =====================
 const BRIEFINGS = {};
 
-BRIEFINGS['2026-06-12'] = {"date":"2026-06-12","fresh":[{"num":1,"title":"案例数据加载中","brand":"—","agency":"—","goal":"—","problem":"—","insight":"—","task":"—","idea":"—","link":"#"}],"classic":{"num":"—","title":"经典案例加载中","brand":"—","agency":"—","goal":"—","problem":"—","insight":"—","task":"—","idea":"—","link":"#"},"quote":{"text":"—","author":"—"}};
-
-BRIEFINGS['2026-06-10'] = {
-  "date":"2026-06-10",
-  "fresh":[
+BRIEFINGS['2026.06.10'] = {
+  "date": "2026.06.10",
+  "fresh": [
     {
-      "num":1,
-      "title":"Lego — The Play Maker",
-      "brand":"Lego · 玩具",
-      "agency":"Our LEGO Agency (OLA)",
-      "goal":"推广「永不停止玩乐」品牌理念，以Jason Momoa号召全球家庭重拾共同玩乐的快乐与力量。",
-      "problem":"全球44%家庭玩乐时间不足，数字设备侵占亲子互动，如何让家长意识到玩乐不是浪费而是刚需？",
-      "insight":"每周仅5小时家庭玩乐即可显著提升幸福感——比刷手机时间还少，玩乐是最低成本的幸福投资。",
-      "task":"以Momoa明星效应打破「玩=幼稚」偏见，弥合44%家庭的「玩乐鸿沟」，让玩乐成为现代家庭的新仪式。",
-      "idea":"Momoa化身「玩乐大师」拍PSA式短片，核心符号为两块积木的「咔嗒」声——简单动作即打开创意与连接之门。",
-      "link":"https://www.adsoftheworld.com/campaigns/the-play-maker"
+      "num": 1,
+      "title": "Lego — The Play Maker",
+      "brand": "Lego·玩具",
+      "agency": "Our LEGO Agency (OLA)",
+      "商业目标": "推广「永不停止玩乐」品牌理念，以Jason Momoa号召全球家庭重拾共同玩乐的快乐与力量。",
+      "核心问题": "全球44%家庭玩乐时间不足，数字设备侵占亲子互动，如何让家长意识到玩乐不是浪费而是刚需？",
+      "核心洞察": "每周仅5小时家庭玩乐即可显著提升幸福感——比刷手机时间还少，玩乐是最低成本的幸福投资。",
+      "传播任务": "以Momoa明星效应打破「玩=幼稚」偏见，弥合44%家庭的「玩乐鸿沟」，让玩乐成为现代家庭的新仪式。",
+      "创意构思": "Momoa化身「玩乐大师」拍PSA式短片，核心符号为两块积木的「咔嗒」声——简单动作即打开创意与连接之门。",
+      "link": "https://www.adsoftheworld.com/campaigns/the-play-maker"
     },
     {
-      "num":2,
-      "title":"Uber Eats — Gordon Ramsay Stops You From Cooking",
-      "brand":"Uber Eats · 外卖配送",
-      "agency":"Mother",
-      "goal":"推出首个全球外卖campaign，借世界杯在17个市场建立「看球不煮饭，叫Uber Eats」的品牌习惯。",
-      "problem":"世界杯期间没人想错过一秒比赛，但吃饭是刚需——品牌如何嵌入「看球与做饭不可兼得」的消费场景？",
-      "insight":"当比赛开始没人想进厨房——让世界最知名厨师本人告诉你「别做饭」，是荒诞又完美的行为反转。",
-      "task":"以Gordon Ramsay暴脾气人设制造反差喜剧，让「世界杯叫外卖」成为全球球迷的本能选择。",
-      "idea":"Ramsay拎Uber Eats绿色袋闯入厨房，标志性咆哮驱赶人们放下锅铲——世界最著名厨师在阻止烹饪，荒诞引爆病毒传播。",
-      "link":"https://www.adweek.com/creativity/gordon-ramsay-wants-fans-to-order-uber-eats-not-cook-during-the-world-cup/"
+      "num": 2,
+      "title": "Uber Eats — Gordon Ramsay Stops You From Cooking",
+      "brand": "Uber Eats·外卖配送",
+      "agency": "Mother",
+      "商业目标": "推出首个全球外卖campaign，借世界杯在17个市场建立「看球不煮饭，叫Uber Eats」的品牌习惯。",
+      "核心问题": "世界杯期间没人想错过一秒比赛，但吃饭是刚需——品牌如何嵌入「看球与做饭不可兼得」的消费场景？",
+      "核心洞察": "当比赛开始没人想进厨房——让世界最知名厨师本人告诉你「别做饭」，是荒诞又完美的行为反转。",
+      "传播任务": "以Gordon Ramsay暴脾气人设制造反差喜剧，让「世界杯叫外卖」成为全球球迷的本能选择。",
+      "创意构思": "Ramsay拎Uber Eats绿色袋闯入厨房，标志性咆哮驱赶人们放下锅铲——世界最著名厨师在阻止烹饪，荒诞引爆病毒传播。",
+      "link": "https://www.adweek.com/creativity/gordon-ramsay-wants-fans-to-order-uber-eats-not-cook-during-the-world-cup/"
     },
     {
-      "num":3,
-      "title":"武夷山国家公园 — 武夷山，啥都能删",
-      "brand":"武夷山国家公园 · 文旅",
-      "agency":"IDEAinside 艾迪因赛",
-      "goal":"打造年轻化文旅宣传片，吸引都市打工人前往武夷山「删除焦虑」，驱动五一出行决策。",
-      "problem":"传统文旅片说教味重与年轻人距离远，如何让「去武夷山」成为主动向往而非被动接收的广告信息？",
-      "insight":"打工人最想「删除」的是一切疲惫——武夷山94.5%植被覆盖率就是最强的「绿色充电宝」。",
-      "task":"以「魔戒能删万物但需绿色能量」的超现实设定，把武夷山植入年轻人日常语境，降低出行决策门槛。",
-      "idea":"打工人捡到「啥都能删」魔戒，删掉咖啡渍会议方案后系统提示「绿色值不足」——答案指向武夷山。线下设「喊删」装置互动。",
-      "link":"https://www.digitaling.com/projects/367646.html"
+      "num": 3,
+      "title": "武夷山国家公园 — 武夷山，啥都能删",
+      "brand": "武夷山国家公园·文旅",
+      "agency": "IDEAinside 艾迪因赛",
+      "商业目标": "打造年轻化文旅宣传片，吸引都市打工人前往武夷山「删除焦虑」，驱动五一出行决策。",
+      "核心问题": "传统文旅片说教味重与年轻人距离远，如何让「去武夷山」成为主动向往而非被动接收的广告信息？",
+      "核心洞察": "打工人最想「删除」的是一切疲惫——武夷山94.5%植被覆盖率就是最强的「绿色充电宝」。",
+      "传播任务": "以「魔戒能删万物但需绿色能量」的超现实设定，把武夷山植入年轻人日常语境，降低出行决策门槛。",
+      "创意构思": "打工人捡到「啥都能删」魔戒，删掉咖啡渍会议方案后系统提示「绿色值不足」——答案指向武夷山。线下设「喊删」装置互动。",
+      "link": "https://www.digitaling.com/projects/367646.html"
     }
   ],
-  "classic":{
-    "title":"Old Spice — The Man Your Man Could Smell Like（2010）",
-    "brand":"Old Spice · 男士护理",
-    "agency":"Wieden+Kennedy",
-    "goal":"扭转品牌老化危机，让被视为「爷爷辈」的Old Spice重新赢得年轻男性消费者。",
-    "problem":"Old Spice=过时代名词，且男性沐浴露购买决策常由女性伴侣主导——如何一击同时触达两群受众？",
-    "insight":"男士护理的真正购买决策者常是伴侣——「你的男人该闻起来像……」比直接对男性说教奏效百倍。",
-    "task":"以一支颠覆性别营销规则的超级碗广告，让Old Spice从「你爸用的」变成全网模仿的文化现象。",
-    "idea":"Isaiah Mustafa半裸出镜，在浴室、帆船、马背间无缝切换，磁性低语「看看你的男人，再看看我」。24小时极速拍摄引爆社交。",
-    "link":"https://en.wikipedia.org/wiki/The_Man_Your_Man_Could_Smell_Like"
+  "classic": {
+    "title": "Old Spice — The Man Your Man Could Smell Like（2010）",
+    "brand": "Old Spice·男士护理",
+    "agency": "Wieden+Kennedy",
+    "商业目标": "扭转品牌老化危机，让被视为「爷爷辈」的Old Spice重新赢得年轻男性消费者。",
+    "核心问题": "Old Spice=过时代名词，且男性沐浴露购买决策常由女性伴侣主导——如何一击同时触达两群受众？",
+    "核心洞察": "男士护理的真正购买决策者常是伴侣——「你的男人该闻起来像……」比直接对男性说教奏效百倍。",
+    "传播任务": "以一支颠覆性别营销规则的超级碗广告，让Old Spice从「你爸用的」变成全网模仿的文化现象。",
+    "创意构思": "Isaiah Mustafa半裸出镜，在浴室、帆船、马背间无缝切换，磁性低语「看看你的男人，再看看我」。24小时极速拍摄引爆社交。",
+    "link": "https://en.wikipedia.org/wiki/The_Man_Your_Man_Could_Smell_Like"
   },
-  "quote":{
-    "text":"\"Nobody reads ads. People read what interests them. Sometimes it's an ad.\"",
-    "author":"Howard Gossage（广告界苏格拉底）"
+  "quote": {
+    "text": "\"Nobody reads ads. People read what interests them. Sometimes it's an ad.\"",
+    "author": "Howard Gossage（广告界苏格拉底）"
   }
 };
 
-BRIEFINGS['2026-06-09'] = {
-  "date":"2026-06-09",
-  "fresh":[
+BRIEFINGS['2026.06.09'] = {
+  "date": "2026.06.09",
+  "fresh": [
     {
-      "num":1,
-      "title":"Raylo — Something Better Always Comes Along",
-      "brand":"Raylo · 电子设备订阅",
-      "agency":"Stink Studios",
-      "goal":"为Raylo电子订阅推出新TV campaign，驱动品牌认知与订阅用户增长。",
-      "problem":"消费者习惯持有过时设备，如何让升级换代显得有吸引力而非浪费？",
-      "insight":"与旧科技\"分手\"的情感体验酷似结束恋情——人们留着不是因为好用，是因为习惯。",
-      "task":"用分手隐喻打破电子品\"耐用品\"认知，让升级成为一场情绪解放。",
-      "idea":"一对情侣在咖啡馆分手，女方控诉男方\"过时、记性差、续航短\"——观众最后发现她吐槽的是旧手机。",
-      "link":"https://www.adsoftheworld.com/campaigns/something-better-always-comes-along"
+      "num": 1,
+      "title": "Raylo — Something Better Always Comes Along",
+      "brand": "Raylo·电子设备订阅",
+      "agency": "Stink Studios",
+      "商业目标": "为Raylo电子订阅推出新TV campaign，驱动品牌认知与订阅用户增长。",
+      "核心问题": "消费者习惯持有过时设备，如何让升级换代显得有吸引力而非浪费？",
+      "核心洞察": "与旧科技\"分手\"的情感体验酷似结束恋情——人们留着不是因为好用，是因为习惯。",
+      "传播任务": "用分手隐喻打破电子品\"耐用品\"认知，让升级成为一场情绪解放。",
+      "创意构思": "一对情侣在咖啡馆分手，女方控诉男方\"过时、记性差、续航短\"——观众最后发现她吐槽的是旧手机。",
+      "link": "https://www.adsoftheworld.com/campaigns/something-better-always-comes-along"
     },
     {
-      "num":2,
-      "title":"Nike — Rip the Script",
-      "brand":"Nike · 运动",
-      "agency":"Wieden+Kennedy",
-      "goal":"借2026世界杯重振Nike品牌势能，以内容生态替代传统广告投放逻辑。",
-      "problem":"世界杯营销内卷严重，如何让campaign超越广告，成为持续12周的文化事件？",
-      "insight":"足球的魅力来自本能与不可预测——最好的营销不是按剧本走，是放手让创造力发生。",
-      "task":"以6分钟短片为锚点，打造12周跨平台内容宇宙，覆盖铁杆球迷与足球新人。",
-      "idea":"30+巨星在好莱坞片场推翻导演剧本接管拍摄，用TikTok式快剪与彩蛋传达\"足球不需要剧本\"。",
-      "link":"https://www.campaignlive.com/article/nike-rips-script-writes-new-chapter-epic-2026-world-cup-campaign/1960540"
+      "num": 2,
+      "title": "Nike — Rip the Script",
+      "brand": "Nike·运动",
+      "agency": "Wieden+Kennedy",
+      "商业目标": "借2026世界杯重振Nike品牌势能，以内容生态替代传统广告投放逻辑。",
+      "核心问题": "世界杯营销内卷严重，如何让campaign超越广告，成为持续12周的文化事件？",
+      "核心洞察": "足球的魅力来自本能与不可预测——最好的营销不是按剧本走，是放手让创造力发生。",
+      "传播任务": "以6分钟短片为锚点，打造12周跨平台内容宇宙，覆盖铁杆球迷与足球新人。",
+      "创意构思": "30+巨星在好莱坞片场推翻导演剧本接管拍摄，用TikTok式快剪与彩蛋传达\"足球不需要剧本\"。",
+      "link": "https://www.campaignlive.com/article/nike-rips-script-writes-new-chapter-epic-2026-world-cup-campaign/1960540"
     },
     {
-      "num":3,
-      "title":"食族人 × 宋雨琦 — 辣出自我 呔破规则",
-      "brand":"食族人 · 快消速食",
-      "agency":"赞意",
-      "goal":"品牌主张从\"不爽就嗦\"升级至\"做自己\"，完成代言人从王琳凯到宋雨琦的无缝切换。",
-      "problem":"如何让代言人更换不止是流量置换，而是品牌精神的递进与深化？",
-      "insight":"当下年轻人最大的\"不爽\"不是外部挫折，而是不确定时代里很难真正\"做自己\"。",
-      "task":"把宋雨琦\"练习生到舞台中央\"的真实故事融入品牌，让口号变成可感知的生活态度。",
-      "idea":"一周半极速交付，以宋雨琦成长经历为脚本，用\"辣出自我\"诠释她对世界最锋利的回答。",
-      "link":"https://m.adquan.com/creative/detail/360971"
+      "num": 3,
+      "title": "食族人 × 宋雨琦 — 辣出自我 呔破规则",
+      "brand": "食族人·快消速食",
+      "agency": "赞意",
+      "商业目标": "品牌主张从\"不爽就嗦\"升级至\"做自己\"，完成代言人从王琳凯到宋雨琦的无缝切换。",
+      "核心问题": "如何让代言人更换不止是流量置换，而是品牌精神的递进与深化？",
+      "核心洞察": "当下年轻人最大的\"不爽\"不是外部挫折，而是不确定时代里很难真正\"做自己\"。",
+      "传播任务": "把宋雨琦\"练习生到舞台中央\"的真实故事融入品牌，让口号变成可感知的生活态度。",
+      "创意构思": "一周半极速交付，以宋雨琦成长经历为脚本，用\"辣出自我\"诠释她对世界最锋利的回答。",
+      "link": "https://m.adquan.com/creative/detail/360971"
     }
   ],
-  "classic":{
-    "title":"Dove — Real Beauty Sketches（真实美丽素描，2013）",
-    "brand":"Dove/多芬 · 个人护理",
-    "agency":"Ogilvy",
-    "goal":"延续\"真实美丽\"品牌主张，在全球引发关于女性自我认知的社会对话。",
-    "problem":"仅2%女性认为自己是美的，广告模特与真实女性之间的巨大鸿沟如何弥合？",
-    "insight":"女性对自己的评价远比他人眼中的她们更苛刻——\"你比你以为的更美\"。",
-    "task":"用一个可参与的社会实验让全球女性重新审视自我认知，输出品牌价值观。",
-    "idea":"请FBI素描师根据女性自述和他人描述分别画像——他人描述的画像总是更美，引发全球热议。",
-    "link":"https://www.digitaling.com/articles/936081.html"
+  "classic": {
+    "title": "Dove — Real Beauty Sketches（真实美丽素描，2013）",
+    "brand": "Dove/多芬·个人护理",
+    "agency": "Ogilvy",
+    "商业目标": "延续\"真实美丽\"品牌主张，在全球引发关于女性自我认知的社会对话。",
+    "核心问题": "仅2%女性认为自己是美的，广告模特与真实女性之间的巨大鸿沟如何弥合？",
+    "核心洞察": "女性对自己的评价远比他人眼中的她们更苛刻——\"你比你以为的更美\"。",
+    "传播任务": "用一个可参与的社会实验让全球女性重新审视自我认知，输出品牌价值观。",
+    "创意构思": "请FBI素描师根据女性自述和他人描述分别画像——他人描述的画像总是更美，引发全球热议。",
+    "link": "https://www.digitaling.com/articles/936081.html"
   },
-  "quote":{
-    "text":"\"If it doesn't sell, it isn't creative.\"",
-    "author":"David Ogilvy（奥美创始人）"
+  "quote": {
+    "text": "\"If it doesn't sell, it isn't creative.\"",
+    "author": "David Ogilvy（奥美创始人）"
   }
 };
 
-BRIEFINGS['2026-06-08'] = {
-  "date":"2026-06-08",
-  "fresh":[
+BRIEFINGS['2026.06.08'] = {
+  "date": "2026.06.08",
+  "fresh": [
     {
-      "num":1,
-      "title":"Sound Transit — Your Connection is Out There",
-      "brand":"Sound Transit · 公共交通",
-      "agency":"Copacino Fujikado",
-      "goal":"推广西雅图新轻轨Crosslake Connection开通，提升市民对新线路的认知与使用率，迎接FIFA世界杯客流。",
-      "problem":"公共交通开通新闻枯燥难传播，如何让一条轻轨线路的工程成就变成全市热议话题？",
-      "insight":"这条轻轨建在世界首座浮桥之上——工程难度逆天到连外星文明都会表示敬佩。",
-      "task":"以幽默科幻叙事让市民用全新眼光看待日常通勤，在世界杯前提升公共交通好感与使用意愿。",
-      "idea":"外星高管在办公室认真分析Sound Transit成就，一边震惊于人类工程能力一边自尊心受挫。户外、平面、社交全面铺开——连外星人都来取经了。",
-      "link":"https://www.adsoftheworld.com/campaigns/your-connection-is-out-there"
+      "num": 1,
+      "title": "Sound Transit — Your Connection is Out There",
+      "brand": "Sound Transit·公共交通",
+      "agency": "Copacino Fujikado",
+      "商业目标": "推广西雅图新轻轨Crosslake Connection开通，提升市民对新线路的认知与使用率，迎接FIFA世界杯客流。",
+      "核心问题": "公共交通开通新闻枯燥难传播，如何让一条轻轨线路的工程成就变成全市热议话题？",
+      "核心洞察": "这条轻轨建在世界首座浮桥之上——工程难度逆天到连外星文明都会表示敬佩。",
+      "传播任务": "以幽默科幻叙事让市民用全新眼光看待日常通勤，在世界杯前提升公共交通好感与使用意愿。",
+      "创意构思": "外星高管在办公室认真分析Sound Transit成就，一边震惊于人类工程能力一边自尊心受挫。户外、平面、社交全面铺开——连外星人都来取经了。",
+      "link": "https://www.adsoftheworld.com/campaigns/your-connection-is-out-there"
     },
     {
-      "num":2,
-      "title":"Jeep × Marvel — The Original Superheroes",
-      "brand":"Jeep × Marvel · 汽车",
-      "agency":"Highdive / RSA Films",
-      "goal":"借美国250周年国庆与Marvel IP联动，将Jeep从越野工具升级为\"美国精神\"文化符号。",
-      "problem":"汽车爱国营销极易陷入说教与俗套，如何让硬派越野品牌在250周年叙事中既真诚又酷？",
-      "insight":"真正的超级英雄不是漫画角色，而是曾驾驶Jeep奔赴前线的退伍军人——品牌拥有真实英雄故事可讲。",
-      "task":"以一支电影级短片将Jeep全系车型塑造为个性角色，在250周年国庆语境中赢得文化认同。",
-      "idea":"邀请真实退役\"Captain\"在加州干涸湖床驾驶Jeep全系完成高难度越野挑战，导演为每款车设定独特角色性格，用Marvel式视觉语言向真实英雄致敬。",
-      "link":"https://www.shots.net/news/view/jeep-x-marvel-give-us-the-original-superheroes"
+      "num": 2,
+      "title": "Jeep × Marvel — The Original Superheroes",
+      "brand": "Jeep × Marvel·汽车",
+      "agency": "Highdive / RSA Films",
+      "商业目标": "借美国250周年国庆与Marvel IP联动，将Jeep从越野工具升级为\"美国精神\"文化符号。",
+      "核心问题": "汽车爱国营销极易陷入说教与俗套，如何让硬派越野品牌在250周年叙事中既真诚又酷？",
+      "核心洞察": "真正的超级英雄不是漫画角色，而是曾驾驶Jeep奔赴前线的退伍军人——品牌拥有真实英雄故事可讲。",
+      "传播任务": "以一支电影级短片将Jeep全系车型塑造为个性角色，在250周年国庆语境中赢得文化认同。",
+      "创意构思": "邀请真实退役\"Captain\"在加州干涸湖床驾驶Jeep全系完成高难度越野挑战，导演为每款车设定独特角色性格，用Marvel式视觉语言向真实英雄致敬。",
+      "link": "https://www.shots.net/news/view/jeep-x-marvel-give-us-the-original-superheroes"
     },
     {
-      "num":3,
-      "title":"蕉内 — 体感科学十周年",
-      "brand":"蕉内 · DTC内衣/家居服",
-      "agency":"蕉内",
-      "goal":"在品牌十周年之际，将\"舒服\"从营销话术升级为可验证的科学体系，建立品类话语权。",
-      "problem":"人人都在喊\"舒服\"，当这个词被用滥后，如何让消费者相信你的舒服是真的？",
-      "insight":"舒服虽私人且转瞬即逝，却可拆解为温度、湿度、触感、压力、防护五大可量化维度。",
-      "task":"联合中国纺织信息中心发布《体感科学报告》，以学术级严谨将主观感受转化为客观标准。",
-      "idea":"联合中央芭蕾舞团拍摄十周年影片，舞者身体各部位由其他舞者共同组成——\"让身体组成身体\"，隐喻人人共享舒服的权利。",
-      "link":"https://www.digitaling.com/projects/366505.html"
+      "num": 3,
+      "title": "蕉内 — 体感科学十周年",
+      "brand": "蕉内·DTC内衣/家居服",
+      "agency": "蕉内",
+      "商业目标": "在品牌十周年之际，将\"舒服\"从营销话术升级为可验证的科学体系，建立品类话语权。",
+      "核心问题": "人人都在喊\"舒服\"，当这个词被用滥后，如何让消费者相信你的舒服是真的？",
+      "核心洞察": "舒服虽私人且转瞬即逝，却可拆解为温度、湿度、触感、压力、防护五大可量化维度。",
+      "传播任务": "联合中国纺织信息中心发布《体感科学报告》，以学术级严谨将主观感受转化为客观标准。",
+      "创意构思": "联合中央芭蕾舞团拍摄十周年影片，舞者身体各部位由其他舞者共同组成——\"让身体组成身体\"，隐喻人人共享舒服的权利。",
+      "link": "https://www.digitaling.com/projects/366505.html"
     }
   ],
-  "classic":{
-    "title":"Apple — 1984（1984）",
-    "brand":"Apple · 科技",
-    "agency":"Chiat/Day",
-    "goal":"在超级碗发布Macintosh，用一支广告让世界记住这个挑战IBM垄断的新品牌。",
-    "problem":"个人电脑市场被IBM统治，无人知晓的新品牌如何在80秒内宣告一个时代来临？",
-    "insight":"Macintosh不是另一台电脑——它是反抗思想控制、解放个体创造力的武器，科技具有政治隐喻。",
-    "task":"创造史上最轰动的超级碗广告，让产品发布成为全球文化事件而非一场普通发布会。",
-    "idea":"Ridley Scott以奥威尔《1984》为蓝本，女子挥锤砸碎老大哥屏幕，宣告\"1月24日Apple推出Macintosh，1984不会像《1984》。",
-    "link":"https://en.wikipedia.org/wiki/1984_(advertisement)"
+  "classic": {
+    "title": "Apple — 1984（1984）",
+    "brand": "Apple·科技",
+    "agency": "Chiat/Day",
+    "商业目标": "在超级碗发布Macintosh，用一支广告让世界记住这个挑战IBM垄断的新品牌。",
+    "核心问题": "个人电脑市场被IBM统治，无人知晓的新品牌如何在80秒内宣告一个时代来临？",
+    "核心洞察": "Macintosh不是另一台电脑——它是反抗思想控制、解放个体创造力的武器，科技具有政治隐喻。",
+    "传播任务": "创造史上最轰动的超级碗广告，让产品发布成为全球文化事件而非一场普通发布会。",
+    "创意构思": "Ridley Scott以奥威尔《1984》为蓝本，女子挥锤砸碎老大哥屏幕，宣告\"1月24日Apple推出Macintosh，1984不会像《1984》\"。",
+    "link": "https://en.wikipedia.org/wiki/1984_(advertisement)"
   },
-  "quote":{
-    "text":"\"Properly practiced creativity can make one ad do the work of ten.\"",
-    "author":"Bill Bernbach（DDB创始人，广告创意革命之父）"
+  "quote": {
+    "text": "\"Properly practiced creativity can make one ad do the work of ten.\"",
+    "author": "Bill Bernbach（DDB创始人，广告创意革命之父）"
   }
 };
 
-// ===================== APPLICATION =====================
-const dates = Object.keys(BRIEFINGS).sort().reverse();
-let currentIndex = 0;
-
-function renderDate(dateStr) {
-  const data = BRIEFINGS[dateStr];
-  if (!data) {
-    document.getElementById('contentArea').innerHTML = '<div class="empty-state">暂无该日期内容</div>';
-    document.getElementById('currentDate').textContent = dateStr;
-    return;
+BRIEFINGS['2026.06.07'] = {
+  "date": "2026.06.07",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "Nike — Rip the Script（让剧本作废）",
+      "brand": "Nike·运动/体育用品",
+      "agency": "Wieden+Kennedy",
+      "商业目标": "借2026世界杯巩固全球足球领导地位，以文化共鸣驱动品牌热爱而非单纯产品推销。",
+      "核心问题": "世界杯营销赛道拥挤，每个品牌都在讲梦想与荣耀，如何跳出同质化宏大叙事？",
+      "核心洞察": "足球最动人时刻是球员凭本能创造的意外，球迷渴望真实自由的表达。",
+      "传播任务": "以6分钟品牌电影引爆关注，配合12周内容生态覆盖全球年轻球迷。",
+      "创意构思": "召集C罗、姆巴佩、哈兰德、詹姆斯等30+体娱跨界巨星，高喊撕掉战术本，以电影级制作呈现足球的自由与快乐。",
+      "link": "https://www.adsoftheworld.com/campaigns/rip-the-script"
+    },
+    {
+      "num": 2,
+      "title": "Apple — Chrome Trackers",
+      "brand": "Apple·科技/消费电子",
+      "agency": "TBWA\Media Arts Lab",
+      "商业目标": "推广Safari隐私功能，强化Apple隐私即品牌信仰的差异化定位，对抗Google Chrome。",
+      "核心问题": "浏览器隐私是抽象技术概念，如何让普通用户直观感受数据追踪的入侵感并产生行动？",
+      "核心洞察": "数据追踪器像隐形人一样24小时附着在用户身上，把它们可视化为跟踪狂，恐惧感立现。",
+      "传播任务": "以一支65秒广告在教育与娱乐之间找平衡，让隐私保护从技术功能变成情感共鸣。",
+      "创意构思": "将数据追踪器具象为紧身衣跟踪狂，趴在人肩上、挤进帐篷。打开Safari，它们瞬间蒸发。荒诞视觉语言让隐私不再抽象。",
+      "link": "https://www.campaignlive.com/article/apple-ad-shows-people-shaking-off-chrome-trackers-safari/1960496"
+    },
+    {
+      "num": 3,
+      "title": "999感冒灵 — 故意挂反广告牌",
+      "brand": "999感冒灵·药品/OTC",
+      "agency": "待确认",
+      "商业目标": "在感冒药同质化竞争中建立温暖有趣的品牌形象，驱动自发传播与情感偏好。",
+      "核心问题": "感冒药广告千篇一律讲疗效，如何打破品类套路让消费者主动关注？",
+      "核心洞察": "中文倒与到谐音，挂反等于福到——用文化符号制造故意的错误，降低广告抵触。",
+      "传播任务": "线下制造视觉事件引发拍照传播，用零媒体预算撬动社交媒体自发扩散。",
+      "创意构思": "999在城市街头故意挂反广告牌，路人抬头发现不是出错而是祝福。一个简单视觉反转，让品牌关怀融入日常。",
+      "link": "https://www.adquan.com"
+    }
+  ],
+  "classic": {
+    "title": "Coca-Cola — Hilltop（1971）",
+    "brand": "Coca-Cola·饮料",
+    "agency": "McCann Erickson",
+    "商业目标": "在越南战争撕裂美国的时代，将品牌从碳酸饮料升华为世界和平的文化符号。",
+    "核心问题": "全美反战情绪高涨，年轻人对消费主义品牌充满怀疑。如何在分裂时刻传递乐观而不被嘲笑虚伪？",
+    "核心洞察": "战争让世界分裂，但分享一瓶可乐的简单快乐是人类共通语言，比任何宣言都诚实。",
+    "传播任务": "用一首歌和一群来自世界各地的年轻人，在人类最分裂的时刻传递最简单的人类善意。",
+    "创意构思": "在意大利山顶聚集30位不同国籍的年轻人，每人手持一瓶可乐，合唱I'd Like to Buy the World a Coke。无产品推销，只有一视同仁的微笑。",
+    "link": "https://www.adsoftheworld.com/campaigns/hilltop"
+  },
+  "quote": {
+    "text": "\"If it doesn't sell, it isn't creative.\"",
+    "author": "David Ogilvy（奥美创始人，广告之父）"
   }
+};
 
-  document.getElementById('currentDate').textContent = dateStr;
-  const d = new Date(dateStr);
-  const weekday = ['日','一','二','三','四','五','六'][d.getDay()];
-  document.getElementById('currentDate').textContent = `${dateStr} 周${weekday}`;
-
-  let html = '';
-
-  // 新鲜案例
-  html += '<div class="section-header"><span class="dot fresh"></span> 新鲜案例</div>';
-  data.fresh.forEach(c => {
-    html += `<div class="case-card">
-      <div class="case-title"><span class="case-num">#${c.num}</span>${c.title}</div>
-      <div class="case-meta"><span>${c.brand}</span><span class="tag">${c.agency}</span></div>
-      <div class="case-detail">
-        <div class="field"><span class="label">商业目标</span>${c.goal}</div>
-        <div class="field"><span class="label">核心问题</span>${c.problem}</div>
-        <div class="field"><span class="label">核心洞察</span>${c.insight}</div>
-        <div class="field"><span class="label">传播任务</span>${c.task}</div>
-        <div class="field"><span class="label">创意构思</span>${c.idea}</div>
-        ${c.link ? `<div class="field"><a class="link" href="${c.link}" target="_blank" rel="noopener">🔗 查看原案例 →</a></div>` : ''}
-      </div>
-    </div>`;
-  });
-
-  // 经典案例
-  html += '<div class="section-header"><span class="dot classic"></span> 经典案例</div>';
-  const cls = data.classic;
-  html += `<div class="case-card">
-    <div class="case-title">${cls.title}</div>
-    <div class="case-meta"><span>${cls.brand}</span><span class="tag">${cls.agency}</span></div>
-    <div class="case-detail">
-      <div class="field"><span class="label">商业目标</span>${cls.goal}</div>
-      <div class="field"><span class="label">核心问题</span>${cls.problem}</div>
-      <div class="field"><span class="label">核心洞察</span>${cls.insight}</div>
-      <div class="field"><span class="label">传播任务</span>${cls.task}</div>
-      <div class="field"><span class="label">创意构思</span>${cls.idea}</div>
-      ${cls.link ? `<div class="field"><a class="link" href="${cls.link}" target="_blank" rel="noopener">🔗 查看原案例 →</a></div>` : ''}
-    </div>
-  </div>`;
-
-  // 金句
-  if (data.quote && data.quote.text) {
-    html += `<div class="quote-section">
-      <div class="quote-text">${data.quote.text}</div>
-      <div class="quote-author">—— ${data.quote.author}</div>
-    </div>`;
+BRIEFINGS['2026.06.07'] = {
+  "date": "2026.06.07",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "Lego — The Play Maker",
+      "brand": "Lego·玩具",
+      "agency": "Our LEGO Agency (OLA，丹麦)",
+      "商业目标": "Lego需要在全球「游戏赤字」日益加剧的时代，将品牌从「卖塑料积木的玩具公司」重新锚定为「家庭游戏权利的全球倡导者」。基于覆盖30,000名家长和15,000名5-12岁儿童的大规模调研，Lego的目标不是多卖一盒积木——而是让「全家一起玩」成为像「全家一起吃饭」一样的家庭健康KPI，从而在屏幕时代建立不可替代的品牌文化护城河。",
+      "核心问题": "现代家庭正在经历一场无声的游戏危机——89%的家长表示希望有更多时间陪孩子玩，但每10个家庭中就有1个承认全家从不一起玩，超过四分之一的孩子对自己玩的时间「不满意」。矛盾在于：家长越来越认同游戏对孩子成长的重要性（93%认为游戏有助于建立家庭纽带、培养韧性和创造力），但同时——工作、屏幕、家务正把游戏挤向边缘。一个卖积木的品牌如果只是说「买积木吧」，在这个屏幕无处不在的世界里等于跟Netflix抢时间——胜算渺茫。",
+      "核心洞察": "Lego调研发现了一个反直觉的「魔法数字」：每周仅需5小时家庭游戏时间，就足以显著提升家庭幸福感和心理健康——比大多数家庭每周看电视或刷手机的时间还少。这意味着人们不玩游戏不是因为没时间、也不是因为不想——而是因为「游戏」被潜意识归类为「正事办完之后才能做的事」，所以永远轮不到。品牌需要的不是再讲一遍「游戏很重要」，而是设计一个「启动游戏的仪式开关」——一个简单到无法拒绝的动作，让游戏从「待办事项」变成「本能反应」。Lego找到了这个动作：两块积木扣在一起的那一声「咔嗒」——the brick click。",
+      "传播任务": "任命Jason Momoa为全球「Playmaker」，不是拍广告让他说积木多好玩——是让他成为一个行走的「游戏启动器」。任务不是卖产品，是卖一个三秒钟的仪式：拿起两块积木，咔嗒一声——在你反应过来之前，你已经开始玩了",
+      "创意构思": "Our LEGO Agency (OLA) 策划了「Never Stop Playing」全球campaign，Jason Momoa主演一支伪公共服务公告式的品牌电影。他不是在表演「玩Lego」——他是在向全世界发布一项消除「游戏赤字」的使命宣言：他的武器不是剑或三叉戟，而是两块Lego积木碰撞的那一声脆响。「Play has always been a big part of my life,」Momoa在campaign中说道，「Even a few minutes of play can completely shift your day.」影片风格介于超级英雄电影和公益广告之间——Momoa天然的力量感与孩子气形成了一种稀有化学反应：一个身高1米93的男人蹲在地上摆弄积木，不是滑稽，是所有人看了都想加入。campaign在全球电视、数字、社交媒体同步上线，是多平台整合战役。Lego借此将品牌角色从「玩具制造商」升级为「全球家庭游戏文化的推动者」——不是告诉人们「你应该玩」，而是让人们想起「原来我这么想玩」。",
+      "link": "https://www.adsoftheworld.com/campaigns/the-play-maker"
+    },
+    {
+      "num": 2,
+      "title": "McDonald's — Bestie: FIFA World Cup Collectible Cups",
+      "brand": "McDonald's·快餐/QSR",
+      "agency": "Wieden+Kennedy",
+      "商业目标": "作为FIFA世界杯长期赞助商，McDonald's在2026世界杯营销的超级军备竞赛中需要一个不对称的切入点。Nike砸了30+全球巨星拍六分钟电影、Coca-Cola联动18个市场做情感大片、adidas占据主场优势——McDonald's无法也不应该在「更大、更贵、更壮观」的维度上与这些品牌竞争。它的目标是在每个社区的门店里创造一种「世界杯正在这里发生」的日常亲密感，将全球狂欢时刻转化为客流量和门店销售额。",
+      "核心问题": "2026世界杯品牌战场已经饱和到令人窒息。每一个顶级品牌都在讲述「足球=梦想/荣耀/情感」的宏大叙事。但这恰恰是问题所在——当所有品牌都在仰望星空，消费者会发现缺少一个「蹲下来跟他们一起看球的品牌」。McDonald's既不需要也不会去拍一部史诗级品牌电影——它的战场不是YouTube前贴片，是每一个社区、每一张托盘、每一杯可乐。但它需要找到一种方式，让一个汉堡+薯条的消费场景承载世界杯的魔力——这种魔力的关键不是「震撼」，是「亲切」。",
+      "核心洞察": "全世界球迷表达热爱的最高频、最通用方式不是买球衣、不是去现场——是收集。从Panini球星卡到比赛门票、从纪念币到球衣号码，收集行为横跨所有文化、年龄、经济阶层。而McDonald's拥有一个独一无二的「收集载体」：Happy Meal玩具和季节限定杯——这是任何体育品牌、任何竞争对手都无法复制的资产。当Thierry Henry、Ronaldinho、David Beckham等传奇球星的面孔出现在McDonald's的塑料杯上——再配上Grimace和Ronald McDonald的友情客串——足球巨星不再是遥不可及的神话，它们变成了你手里正在喝的那杯可乐上咧着嘴对你笑的人。这种「巨星+奶昔大哥」的组合产生了一种别的品牌做梦都想不出来的化学反应：世界杯和你家楼下那家麦当劳，是同一种快乐。",
+      "传播任务": "把世界杯从「电视机里的盛典」拽进「你家楼下麦当劳」——让足球传奇成为你的同桌，让一只杯子成为全世界最民主的世界杯纪念品",
+      "创意构思": "Wieden+Kennedy为McDonald's创作的「Bestie」campaign影片以一种轻巧温暖的基调呈现足球传奇光临麦当劳的情景——Henry、Ronaldinho、Beckham等巨星不是来拍广告的，是来买印着自己脸的杯子。Grimace和Ronald McDonald也出现在画面里，足球巨星与快餐吉祥物同框的视觉产生了强烈的文化冲撞和幽默张力。整支影片去掉了世界杯广告常见的慢镜头、交响乐、热泪盈眶——取而代之的是一种「哥们儿来吃汉堡顺便集个杯子」的松弛感。杯子本身在世界杯期间在McDonald's全球门店发售，将每一次驱车取餐变成一次世界杯文化仪式。Muse by Clios将这支广告评为本周最佳广告第一名，称其为「W+K在世界杯前夕对球迷文化的一次绝妙致敬」。",
+      "link": "https://musebyclios.com/advertising/mcdonalds-world-cup-runneth-over-tops-our-5-ads-of-the-week/"
+    },
+    {
+      "num": 3,
+      "title": "可复美 × 魏大勋 — 这一局我掌控",
+      "brand": "可复美·功效护肤",
+      "agency": "Oyster生蚝 / 赞意 / 风犬娱乐",
+      "商业目标": "在护肤品类代言人营销极度内卷的环境中（明星拿产品拍照→发微博→粉丝转发→结束），可复美需要打破传统官宣模式，将重组胶原蛋白「修红、修脆弱」的功能卖点转化为可感知的情绪语言，把代言人官宣做成一桩事件营销——同时完成品牌认知刷新、产品卖点传达和销售爆发三重任务。",
+      "核心问题": "护肤品代言人广告的「标准答案」已经让所有消费者免疫——Before & After对比、实验室白大褂、明星捧着产品微笑。可复美的胶原棒核心卖点是「修红、修脆弱」，但如果继续走「展示皮肤前后变化」的老路，品牌就会被淹没在无数「一瓶解决XX问题」的噪音里。更大的挑战是：这是一个需要讲清楚「重组胶原蛋白」科学故事的品牌——但没人愿意在娱乐内容里读论文。",
+      "核心洞察": "「脆弱感」不止是皮肤会泛红、干痒、敏感——更是每个人在生活里「被击中」的时刻：健身力竭、熬夜崩溃、失恋心碎、职场背锅。人们不需要一瓶护肤品来「修复真皮层」——他们需要一个角色来告诉他们：你每一个破碎的瞬间，都有人撑你。而魏大勋恰恰是全中国最会演「破碎感」的男演员——他凭《我的人间烟火》里孟宴臣一角塑造了「高知霸总+致命破碎感」的极致形象，一夜爆红。选择魏大勋不是因为他「帅」「粉丝多」——是因为他就是「破碎感」这个品类的视觉代名词。把皮肤「红」和人生「脆弱」重叠——修红=修破碎感，产品价值和角色人设不需要任何解释就完成了互相翻译。",
+      "传播任务": "不拍广告——拍一部「洗眼连续剧」。用追剧逻辑讲产品卖点。让消费者每天等着「更新」、主动追结局——不是被广告触达，是放广告一条生路，因为你根本不想错过魏大勋的下一个镜头",
+      "创意构思": "Oyster生蚝联合赞意、风犬娱乐打造了一场「事件营销型代言人官宣」，以「一支掌控，快速修红」为核心信息，将产品卖点嵌入一支连续短剧。全片聚焦6个真实生活场景——健身、暴晒、熬夜写论文、职场高压——在每一个「皮肤要崩了」的瞬间，魏大勋用可复美胶原棒精准修复，重回光彩照人。从校园到职场，可复美以陪伴者角色贯穿全部成长线索。campaign配合魏大勋同期热播新剧《无可替代》形成共振——从悬疑预热到逐集释出，全程「追剧」体验引爆粉丝二创狂潮。线下覆盖45+城市LED地广大屏，NFC小卡、光栅大卡、mini立牌等周边设计让粉丝自发高喊「可复美懂我们」。最终数据：总曝光2.38亿，微博热搜第六位，官宣日销售额同比增1416%，单日GMV突破3000万，一周剧更累积破亿销量。数英评分9.9分——「最好的代言，是彼此成就；最好的营销，是让所有人都成为故事的一部分。」",
+      "link": "https://www.digitaling.com/projects/368284.html"
+    }
+  ],
+  "classic": {
+    "title": "Volkswagen — Think Small（1959）",
+    "brand": "Volkswagen·汽车",
+    "agency": "Doyle Dane Bernbach (DDB，美国)",
+    "商业目标": "1959年的美国，汽车广告只有一个公式：大、更大、再大。凯迪拉克和雪佛兰在比谁的尾鳍更长、谁的镀铬更多、谁的发动机马力更高。德国大众试图在美国市场卖一辆又小又丑的甲壳虫——看起来像纳粹时代的遗产（它确实是），在高速公路时代显得可笑。大众需要的不只是广告——是需要一个能让美国人「重新定义什么是好车」的认知手术。",
+    "核心问题": "甲壳虫和美国汽车广告的每一行文案都是敌人。它小——而美国车正在比大；它丑——而美国车正在比美；它没有尾鳍——而美国车恨不得长出翅膀；它是希特勒时期诞生的——而二战结束才14年。任何一个传统广告人都只会在甲壳虫身上看到「需要克服的缺点」——需要把它拍得更大、更豪华、更美国。但Bill Bernbach和Helmut Krone看到了相反的东西：缺点列表就是卖点列表。问题是——你如何在满是「更大更好」的版面里，让「小」看起来像一种智慧而不是妥协？",
+    "核心洞察": "美国消费者已经被「大=好」的广告轰炸了整整十年——他们不是真的相信它，只是没有人给他们提供过另一个选项。当一个汽车品牌第一次诚实地说出「我小」「我丑」「我不快」的时候——这种诚实本身就是最具破坏力的武器。它产生的心理效应不是「这车真小」而是「这个品牌真他妈诚实」——而诚实创造的信任，比任何镀铬尾鳍都能卖出更多的车。更致命的洞察是：美国社会正在变化——Beat Generation（垮掉的一代）正在质疑消费主义，反主流文化在暗流涌动。甲壳虫不需要迎合主流——它只需要成为「不想主流的人」的徽章。",
+    "传播任务": "不用任何传统汽车广告的语言和视觉。不把甲壳虫伪装成一辆美国车。把「小」变成一种智力上的优越感——开甲壳虫的人不是买不起大车，是聪明到不需要大车",
+    "创意构思": "DDB艺术总监Helmut Krone和文案Julian Koenig创作了广告史上最著名的一则平面广告。整个版面大面积留白，一辆小小的甲壳虫孤零零地出现在左上角——像一只被遗弃在空白纸上的昆虫。标题只有两个词：「Think small.」正文以反讽的语调细数甲壳虫的各项「缺点」——太小、太慢、太丑——每一条最后都反转成优点：小意味着好停车、省油、容易维修。这种「自我贬低式诚实」在当时是前所未有的——没有广告这么说过话。Krone坚持使用一种在当时看来极其不商业的极简版面设计——没有人物、没有色彩、没有背景、没有人笑——「这不是一张广告，它看起来像来自一本我很想读的杂志。」该广告不仅让甲壳虫在美国实现销售奇迹（到1970年美国销量超过400万辆），更彻底改写了整个广告行业对「什么是广告语言」的理解。DDB创始人Bill Bernbach后来说过：「没有人算你投了多少次广告，他们只记得你给他们留下了什么印象。」Think Small就是那种你只需要看过一次、永远不会忘记的印象。",
+    "link": "https://www.adsoftheworld.com/campaigns/think-small"
+  },
+  "quote": {
+    "text": "\"Rules are what the artist breaks; the memorable never emerged from a formula.\"",
+    "author": "Bill Bernbach（DDB创始人，广告创意革命之父）"
   }
+};
 
-  document.getElementById('contentArea').innerHTML = html;
-  updateNavButtons();
-}
+BRIEFINGS['2026.06.06'] = {
+  "date": "2026.06.06",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "Sojasun — SoyMen",
+      "brand": "Sojasun·植物基食品/豆制品",
+      "agency": "Marcel（法国）",
+      "商业目标": "作为法国先锋大豆品牌，Sojasun需要打破「soy boy」（豆男，manosphere圈子用来侮辱男性的贬义词，意指软弱/女性化）对品牌和品类的负面标签效应，将「大豆=高蛋白」的事实植入消费者心智，在植物基蛋白赛道中建立不可替代的品牌辨识度。",
+      "核心问题": "男性权利圈子（manosphere）痴迷蛋白质——讲蛋白质、吃蛋白质、炫耀蛋白质——但偏偏痛恨大豆。「Soy boy」一词从这些社群的内部梗蔓延为全网流行语，在成千上万条视频中被用来羞辱男性——对一家大豆品牌而言，这不是网暴，是生意上的生存威胁。忽视它等于默认标签，反击它又可能引火烧身。",
+      "核心洞察": "讨厌你的人，恰恰是最需要你的产品的人。Sojasun不需要辩护「大豆不可耻」——它需要反过来邀请那些嘲笑大豆的人成为大豆的代言人：既然你们这么关心蛋白质，那你知道大豆蛋白质含量有多高吗？攻击性的标签，一旦被品牌自己捡起来戴在头上，就不再是武器——是免费的户外广告。",
+      "传播任务": "把「soy boy」从对手扔过来的石头，接住、擦干净、刻上品牌logo，然后当名片发回去——你不是叫我soy boy吗？来，做我们的SoyMan",
+      "创意构思": "Marcel为Sojasun策划了一场堪称「反向网暴」的campaign——品牌主动邀请manosphere的KOL成为Sojasun品牌大使，正式册封他们为「SoyMen」。（1）发邮件把campaign故事板直接寄给他们过目；（2）在他们的TikTok视频评论区公开招募；（3）把广告投成他们YouTube视频的前贴片，向他们的观众发出呼吁；（4）在他们做直播时，开着印有Sojasun标志的卡车停在附近；（5）在Twitch直播中用打赏留言刷屏招募。全程用幽默消解攻击——Sojasun不是在跟haters吵架，是在给haters发offer。这是2026年迄今为止最具互联网原生精神的品牌campaign之一。",
+      "link": "https://www.adsoftheworld.com/campaigns/soymen"
+    },
+    {
+      "num": 2,
+      "title": "Nike — Rip the Script",
+      "brand": "Nike·运动服饰",
+      "agency": "Nike内部创意团队 + Wieden+Kennedy（推测）",
+      "商业目标": "2026世界杯年，作为非FIFA官方赞助商，Nike需要以一场远超传统广告规模的文化事件抢占世界杯话语权，证明Nike——而不是官方赞助商adidas——才是全球足球文化的真正定义者。12周持续内容释放，六分钟品牌电影为开篇第一枪。",
+      "核心问题": "Nike不是世界杯官方赞助商，每一帧广告都必须绕开FIFA严格保护的官方logo、官方用球、官方奖杯和赛场镜头——但同时必须让全世界一看就知道「这是世界杯」。更大的挑战是：当所有品牌都在堆球星阵容，「更多球星=更好广告」的公式已经卷到头了。传统世界杯广告都是提前拍好的——这本身就反世界杯精神，因为世界杯最迷人的恰恰是「你永远不知道接下来会发生什么」。",
+      "核心洞察": "足球已经不等同于「比赛」了。它流动在时尚里、音乐里、街头文化里、零售空间里、创作者社群里——球迷每天通过无数个触点与足球相遇，其中大多数跟比分无关。Nike不需要假装自己是官方赞助商——它只需要成为这个文化宇宙的中心引力。一场比赛90分钟，但足球文化全年无休。",
+      "传播任务": "不拍广告——造一个「Nike Football Universe」。一部撕掉自己剧本的六分钟电影只是入口，背后是零售、社区、产品、联名编织的生态系统——不是邀请消费者看一支广告然后走开，是邀请他们成为这个宇宙的一部分",
+      "创意构思": "The Drum 6月5日报道，Nike发布「Rip the Script」六分钟品牌电影。C罗、姆巴佩、哈兰德、维尼修斯四大巨星主演，围绕他们的是一个堪比流行文化情绪板的跨界阵容：LeBron James、Kim Kardashian、Travis Scott、BLACKPINK Lisa、Channing Tatum、Young Miko、Ted Lasso悉数客串。故事设定在好莱坞电影片场——球星们纷纷「撕掉剧本」，按直觉踢球：姆巴佩直接倒勾、哈兰德原地等球再来、C罗继续追逐不可能。退役传奇Ronaldinho、伊布、德罗巴、坎通纳等也以彩蛋形式出场。但影片只是冰山一角——全球5,000+零售店焕新、纽约「House of Merc」Mercurial文化空间、洛杉矶「Estadio Niky's」内置球场的足球实验室、达拉斯「The Roof at Vanta」沉浸式足球环境，以及Nike×Lego联名系列同步上线。社区层面，「Toma el Juego」街头足球锦标赛已在六大洲100+城市落地。Nike副总裁Helena Thornton：「我们热爱那种新鲜、本能、不可预测、充满创造力的足球。」",
+      "link": "https://www.thedrum.com/news/2026/06/05/ad-of-the-day-nike-upstages-adidas-s-world-cup"
+    },
+    {
+      "num": 3,
+      "title": "可口可乐 — Uncanned Emotions（无法灌装的情绪）",
+      "brand": "Coca-Cola·饮料",
+      "agency": "Ogilvy / WPP OpenX",
+      "商业目标": "作为FIFA世界杯连续十年的官方合作伙伴，可口可乐在2026世界杯开幕前夕面向欧洲市场推出情感驱动型品牌广告，将可乐从「解渴饮料」重新锚定为「球迷观赛情绪的最佳陪伴」，在夏天饮料旺季和世界杯流量红利中最大化品牌情感联想与购买转化。",
+      "核心问题": "世界杯大概是这个世界上最能凝聚人心的体育赛事——数百万球迷在同一时刻共同经历高潮与低谷，从绝杀进球到错失良机，情绪的起伏、爆发发生在同一秒钟。但大多数世界杯广告要么拍球员（你踢不了）、要么拍狂欢（不是所有人都在派对）。可口可乐作为FIFA最长情的赞助商之一，如果在世界杯年只打「喝可乐解渴」，等于浪费了手里最稀缺的资产——球迷的情绪。",
+      "核心洞察": "足球给人最强烈的东西不是比分，是比赛进行时那种「情绪过山车」——期待、兴奋、紧张、沮丧、狂喜、心碎，每一种都真实到无法被灌装进任何容器。但有趣的是：唯一能陪球迷经历这一切的，恰好是一个装在罐子里的东西——当你在客厅尖叫、在酒吧抱头、在看台流泪，可乐永远在手边。不是「赢了一起喝」，是「看球的时候它就在那里」。",
+      "传播任务": "让一罐可乐从「庆祝时的道具」变成「情绪的容器」——不是告诉消费者「喝可乐很开心」，而是告诉消费者「你所有的情绪，可乐都陪你经历了」",
+      "创意构思": "可口可乐欧洲市场推出品牌短片《Uncanned Emotions》。全片以沉浸式的视听语言构建「情绪转场」——从期待到兴奋、从紧张到沮丧、从狂喜到释放，场景之间丝滑无缝衔接，如同一场情绪的接力。可口可乐红色的瓶身和罐身作为贯穿全篇的视觉线索，出现在每一个情绪的关键时刻——不是主角，是见证者。短片几乎没有足球比赛画面，聚焦的是看球的人：他们的脸、他们的手、他们握紧罐子的指关节。品牌信息收束于「拥抱每一种情绪」——可口可乐不是教你庆祝，是告诉你在这一场足球盛事里，无论发生什么，它都是你身边那个不说话但一直都在的存在。数英评分9.6分，入选海外项目精选。",
+      "link": "https://www.digitaling.com/projects/368746.html"
+    }
+  ],
+  "classic": {
+    "title": "California Milk Processor Board — Got Milk?（1993）",
+    "brand": "加州牛奶加工委员会·乳制品",
+    "agency": "Goodby, Silverstein & Partners（美国）",
+    "商业目标": "1993年的加州，牛奶消费已经连续下滑了15年。消费者不讨厌牛奶——只是觉得它「无聊」。加州牛奶加工委员会需要一个campaign阻止颓势，在缺乏差异化、缺乏兴奋点的品类里重新激活消费欲望。没有新产品、没有新配方、没有新包装——只有牛奶本身。",
+    "核心问题": "牛奶是所有食品广告里最难卖的东西。它没有口味层次——不像精酿啤酒有花香果香；没有使用场景的想象力——不像可口可乐能出现在派对、约会、旅行里；没有身份标签——不像哈雷能让你感觉自己是个反叛者。牛奶就是牛奶：白色、液体、冰箱里永远有一盒。更大的麻烦是：消费者不是讨厌牛奶，他们是「不觉得自己缺牛奶」——冰箱里那半加仑已经放了一星期了，你提醒他们喝，他们会说「哦对，忘了」，然后继续喝橙汁。没人会为不缺的东西掏钱。",
+    "核心洞察": "Goodby Silverstein的策略人员发现了一个反直觉的事实——消费者在「有牛奶」的时候完全感觉不到牛奶的存在，但在「没有牛奶」的时候，牛奶变成了全世界最重要的东西：吃巧克力曲奇发现牛奶没了、吃麦片倒进碗里发现牛奶见底了、半夜起来想吃蛋糕发现最后一口牛奶被室友喝光了。那一刻的失落感强烈到让你当场出门买牛奶。牛奶从来不是一个「想要」的东西——它是一个「一旦缺失就无可替代」的东西。品牌的全部机会就在这个「缺失的瞬间」。",
+    "传播任务": "停止劝人「喝牛奶」——开始拍摄「没有牛奶的绝望瞬间」。不是卖产品，是卖产品缺位时的痛苦",
+    "创意构思": "Goodby Silverstein创作了广告史上最著名的问句——「Got Milk?」两个词，不需要任何解释。首支TVC中，一个历史迷正在吃花生酱三明治，广播里主持人打电话进来问「谁能说出Alexander Hamilton被Aaron Burr射杀时的细节？」——他接起电话，一张嘴全是花生酱粘住，冲到冰箱——没有牛奶。广告结束：他拿着百万奖金支票，一句话说不出来。后续系列围绕同一个机制——食物让人说不出话/咽不下去/嘴巴粘住→冲去找牛奶→没了。平面广告中，明星、运动员、卡通人物嘴上挂着一道白色牛奶胡子（milk mustache），配文永远只有两个词：Got Milk? 这场campaign持续超过20年，不仅让加州牛奶消费止跌回升，更让牛奶胡子成为美国流行文化最具辨识度的视觉符号之一。它证明了食品广告的最高境界不是描述产品有多好——是让消费者自己「体验」产品缺位时有多糟。",
+    "link": "https://www.adsoftheworld.com/campaigns/got-milk"
+  },
+  "quote": {
+    "text": "\"Nobody reads ads. People read what interests them. Sometimes it's an ad.\"",
+    "author": "Howard Luck Gossage（广告界的苏格拉底）"
+  }
+};
 
-function updateNavButtons() {
-  document.getElementById('prevBtn').disabled = currentIndex >= dates.length - 1;
-  document.getElementById('nextBtn').disabled = currentIndex <= 0;
-}
+BRIEFINGS['2026.06.05'] = {
+  "date": "2026.06.05",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "Naturally Fresh — Weird is Wonderful",
+      "brand": "Naturally Fresh·宠物用品/猫砂",
+      "agency": "TDA Boulder",
+      "商业目标": "在猫砂品类高度同质化的市场中，Naturally Fresh需要从「功能性猫砂」（吸水除臭）突围为「有态度的宠物生活方式品牌」，以核桃壳这一差异化原料为核心资产，抢占猫奴人群的品牌偏好与情感认同，在夏季宠物用品旺季提升货架转化。",
+      "核心问题": "猫砂广告几十年来千篇一律——一只猫、一盆干净的砂、一句「强力除臭」。消费者已经免疫了。更大的问题是：「疯狂猫奴」（Crazy Cat People）被社会当成一个有待嘲笑的标签——但养猫的人自己以此为荣。行业里没人站出来替这群人说句话。",
+      "核心洞察": "所有大规模的改变都始于那些被叫作「怪人」的人。「疯狂猫奴」不是贬义——那是愿意凌晨三点爬起来给猫开罐头、把猫照片当手机屏保、跟猫说话比跟人多的人。而产品本身同样「怪异」——核桃壳做的猫砂。怪异不是弱点，是辨识度。当整个品类都在追求「正常」，怪异本身就是最锐利的刀。",
+      "传播任务": "把「怪异」从一个有待克服的产品劣势，翻转为一面值得炫耀的勋章——你怪，所以你改变世界",
+      "创意构思": "TDA Boulder操刀的全品类颠覆campaign——核心视觉用核桃壳本身的棱角纹理作为主视觉元素，搭配大胆的「Weird is Wonderful」宣言式标题。TVC和平面广告的主角不是猫，是那些被叫作「疯狂猫奴」的人——他们不是在养猫，是在跟一个每天踩进核桃壳碎屑的小混蛋谈恋爱。品牌产品用核桃壳替代传统粘土矿砂（更环保、更可持续、除臭能力更强），但不是把「可持续」挂在嘴边——而是把「这不正常吗？太好了」写在全世界的广告牌上。6月全美上线，被认为是2026年宠物品类最具颠覆性的品牌campaign之一。",
+      "link": "https://www.adsoftheworld.com/campaigns/weird-is-wonderful"
+    },
+    {
+      "num": 2,
+      "title": "IKEA — There's No Feeling Like Home",
+      "brand": "IKEA·家居零售",
+      "agency": "McCann（全球）",
+      "商业目标": "IKEA全球零售（Ingka Group）需在疫后「居家经济」回归常态的新阶段，将品牌从「买家具的地方」重新锚定为「定义家的感觉的品牌」，激活全球40+国家消费者的情感链接，驱动回归实体店的到访率与客单价。",
+      "核心问题": "IKEA的品牌心智长期停留在「平价北欧家具」「周末搬仓库」的功能性层面。年轻人去IKEA是为了买一个Billy书柜，不是为了「感受家」——品牌缺少一个让消费者在离店后还能持续回味的情绪入口。而「家」这个品类词正在被生活方式品牌、小红书、Instagram稀释——人人都可以说「家是一种感觉」，但IKEA有资格成为那个说这句话的品牌吗？",
+      "核心洞察": "IKEA的Life at Home报告显示——全球三分之二的人将家描述为「快乐的地方」。但真正让人动容的不是家的物理空间，是「回家」这个动作本身：关掉办公室电脑那一刻的期待、推开门那一刻的解脱、换掉外套和鞋子那一刻的松弛。品牌不需要告诉人「买什么家具让家更好看」——人需要的不是家具，是有人替他们拍下「回家」这件事本身有多美。",
+      "传播任务": "让IKEA从一个「卖家具的」变成一个「守护回家这件事的品牌」——不是在货架上卖沙发，是在全世界每一个门口欢迎你回来",
+      "创意构思": "McCann打造的品牌英雄短片《Coming Home》由Justyna Obasi执导（Anorak Film制作），Lucy Dacus翻唱的Carole King经典《Home Again》作为配乐。全片无产品硬广、无价格信息——只有全世界不同城市、不同职业的人在一天结束时放下一切、走回家的画面：餐厅服务员收工、学生放学、白领下班。不拍家里面有什么——只拍「踏入家门」的那一秒。品牌信息出现在最后一帧：「There's no feeling like home.」全球各地版本同步上线，覆盖电视、数字、户外和社交媒体。这是IKEA近年来少有的纯情感驱动型全球campaign，标志着品牌从「产品说话」到「情感叙事」的策略转向。",
+      "link": "https://www.adweek.com/creativity/ikeas-global-campaign-is-a-love-letter-to-the-feeling-of-home"
+    },
+    {
+      "num": 3,
+      "title": "名创优品 — 世界微笑日：这年头连广告牌都炒CP",
+      "brand": "名创优品·生活潮流零售",
+      "agency": "品牌内部团队",
+      "商业目标": "世界微笑日IP步入第4年，需要从「提醒人微笑」的模式升级为「制造开心社交货币」的全民话题，在618大促预热期强化名创优品「IP联名集合店」新定位，撬动年轻消费者的自发传播与到店转化。",
+      "核心问题": "微笑日campaign做了3年，消费者已经看惯了「今天你微笑了吗」式温情说教。名创优品自己也走到了战略拐点——从「极致性价比」转型「全球IP联名集合店」，微笑日如果继续打温情牌，跟新定位之间有一个巨大断裂：IP联名意味着好玩、跨界、破次元，而不是被教育。",
+      "核心洞察": "年轻人真正的开心不是被提醒「你要笑」，是做了一件好笑的事情之后忍不住笑。2026年的年轻人最缺什么？不是快乐，是「一个不必认真就很好玩的借口」。如果名创优品是世界微笑日的主角，那其它品牌就是它CP——「你们都在过节，我偏要组CP」。",
+      "传播任务": "不给自己打广告——给友商打广告，把微笑日从「品牌节日」变成「品牌团建」——开心不需要对手，需要搭子",
+      "创意构思": "名创优品在世界微笑日当天干了一件「广告史上可能没人干过的事」——把全国线下广告牌主动让给友商打广告。不是讽刺竞品、不是比惨——正经地把广告位让给麦当劳、迪士尼、line friends等IP联名伙伴，文案写着「开心不商战，更要为彼此站台」。社交平台同步发起#这年头连广告牌都炒CP#引发自来水裂变。线下门店同步推出「开心搭子」限定联名周边，把线上话题转化为到店购买行为。项目上线后视频全网播放量超150W+，总曝光累计2.5亿，3次上热搜总榜。",
+      "link": "https://www.digitaling.com/projects/367030.html"
+    },
+    {
+      "num": 1,
+      "title": "Coca-Cola — No Better Feeling: FIFA World Cup 2026",
+      "brand": "Coca-Cola·非酒精饮料",
+      "agency": "WPP OpenX / Ogilvy",
+      "商业目标": "2026年FIFA世界杯由美国、加拿大、墨西哥三国联合主办，是史上规模最大的世界杯（48支球队、104场比赛）。作为FIFA最长情的全球合作伙伴（自1974年起），Coca-Cola需要在世界杯开赛前打响第一枪，将品牌与「世界杯情绪」深度绑定，在全球200+市场同步激活，驱动夏季饮料旺季的销量与品牌热度。",
+      "核心问题": "世界杯营销的竞争比比赛本身还激烈——Nike、adidas、百威、卡塔尔航空等品牌投入数亿美元抢占注意力。Coca-Cola面临的挑战不是「让人知道它是赞助商」（人人都知道），而是「让人在看球的时候想喝可乐」——当屏幕上全是世界杯logo，消费者分不清谁是赞助商，却分得清哪一刻让他心跳加速。",
+      "核心洞察": "足球最迷人的不是进球本身，是进球前一秒——全场屏息、所有可能性悬在半空、一切都可以在一秒内改变。而在那一秒之后——狂喜、心碎、不敢置信——每一种极端情绪袭来时，手边都需要一样东西。Coca-Cola不需要成为世界杯的主角，它需要成为「见证这一切的那个东西」——当你在客厅尖叫、在酒吧抱头、在球场流泪，可乐永远在你手边。",
+      "传播任务": "可乐不是庆祝的道具，是情绪的容器——不是「赢了喝可乐」，是「看球的时候可乐就在那儿」——品牌不抢镜，品牌陪着你",
+      "创意构思": "WPP OpenX与Ogilvy联合打造的全球TVC《No Better Feeling》。全片聚焦足球场上那些一秒天堂一秒地狱的瞬间——点球前的深呼吸、伤停补时的最后一攻、门将扑出后全队的狂奔。没有一句旁白说「来瓶可乐」，只有一个红色的瓶子出现在每一个决定性的瞬间旁边——沙发上、球迷堆里、球员通道。品牌slogan「This FIFA World Cup™, Feel It All with Coca-Cola」收尾。全线媒介覆盖电视、数字、户外和球场内LED，是全球世界杯营销中最早发力的品牌之一，也是WPP OpenX专门为Coca-Cola成立后的首个全球性体育大事件作品。",
+      "link": "https://www.adsoftheworld.com/campaigns/no-better-feeling-fifa-world-cup-2026"
+    },
+    {
+      "num": 2,
+      "title": "Nike — World Cup Universe: 一部撕掉自己剧本的六分钟电影",
+      "brand": "Nike·运动服饰",
+      "agency": "未披露（据信为Wieden+Kennedy）",
+      "商业目标": "Nike需要在2026世界杯周期证明自己仍是全球足球文化的定义者——尽管不是FIFA官方赞助商，Nike签下了绝大多数参赛球队和顶级球星。本届世界杯是Nike历史上最大的足球营销战役，12周持续内容释放，6分钟品牌电影打响第一枪。",
+      "核心问题": "世界杯官方赞助商的光环被FIFA严格保护——非赞助商品牌不能使用世界杯官方logo、官方用球、官方奖杯、赛场镜头。Nike的每一帧都必须绕开这些限制——但同时必须让全世界一看就知道「这是世界杯」。更大的挑战是：当所有品牌都在拼球星阵容和宏大叙事，「更多球星 = 更好广告」的逻辑已经卷到头了。",
+      "核心洞察": "世界杯最迷人的是「不确定性」——剧本随时被撕掉。你永远不知道下一场谁赢、谁受伤、谁成为英雄、谁成为罪人。但所有品牌的世界杯广告都是「提前拍好的」——这意味着传统世界杯广告本质上是反世界杯精神的。Nike不需要假装知道谁会赢——它只需要拍「不确定性」本身。不是拍一种叙事，是拍叙事随时可能被推翻的紧张感。",
+      "传播任务": "用一部电影长度的广告告诉全世界——Nike不是来预测世界杯的，是来陪全世界的球迷一起「不知道接下来会发生什么」的",
+      "创意构思": "据Adweek报道（Brittaney Kiefer / June 4, 2026），Nike发布了一部六分钟品牌电影，作为其12周世界杯内容宇宙的开篇。影片结构高度元叙事——多条剧情线并行推进，每一条都在关键时刻被另一条「撕掉」。球场上的剧情被更衣室打破，更衣室被街头打破，街头被一个小孩踢着塑料瓶打破——非线性叙事让观众始终处于「下一秒不知道会发生什么」的状态。这种自反式的叙事结构，在世界杯营销中前所未有。影片本身成为世界杯「不可预测性」的隐喻——而这恰恰是FIFA官方规则关不住的东西。",
+      "link": "https://www.adweek.com/creativity/nike-reveals-a-world-cup-universe-that-rips-up-its-own-script/"
+    },
+    {
+      "num": 3,
+      "title": "Gentle Monster × 于适、柳智敏 — 好神经的广告",
+      "brand": "Gentle Monster·时尚眼镜",
+      "agency": "品牌内部团队",
+      "商业目标": "韩国高端眼镜品牌Gentle Monster在中国市场持续扩大声量，需要一支能在社交媒体引发「这什么鬼但好想看下去」自传播效应的campaign，巩固品牌「不正常才是正常」的独特调性，同时借助于适（中国新锐演员）和柳智敏/Karina（aespa成员，韩国顶流偶像）的跨圈影响力，触达Z世代潮流消费者。",
+      "核心问题": "眼镜广告千篇一律——模特戴眼镜、摆pose、说「彰显品味」。Gentle Monster从诞生第一天起就拒绝做正常广告。但「不正常」做久了，消费者也会形成新的预期——「不正常的Gentle Monster」本身正在成为一种套路。品牌需要证明——「我们不正常」不是一句口号，是每一次都让你想不到。",
+      "核心洞察": "「好神经」在中文语境里是一句暧昧的夸奖——既可以是「你疯了吧」也可以是「疯得我好喜欢」。这正是Gentle Monster的品牌基因——让人不确定该怎么反应，但在犹豫的那一刻已经记住了。Gentle Monster不需要告诉消费者「我们很酷」——它需要让消费者看完广告之后，转头对朋友说：「你看这个了吗？好神经。」——这句话本身就是最好的媒介投放。",
+      "传播任务": "不用任何一句话定义品牌——让消费者自己说出品牌想说的话：「好神经。」——两个字，比千金媒介预算更有穿透力",
+      "创意构思": "数英评分9.3分的高分作品。Gentle Monster邀请中国演员于适与韩国偶像柳智敏（Karina）同框出演，在怪异、超现实、打破所有广告逻辑的场景中佩戴品牌眼镜。影片不设产品功能说明、不设品牌价值宣言——只有两个顶级面孔在一系列让人「这什么？」但移不开眼的画面中穿行。关键词标签就是「视频营销」「TVC」——但做出来的东西完全不像任何一支TVC。项目上线后迅速在中文社交媒体引发二创和讨论，评论区高赞回复多为「我看了三遍还没看懂但好喜欢」——精准命中品牌需要的传播效果。",
+      "link": "https://www.digitaling.com/projects/368928.html"
+    }
+  ],
+  "classic": {
+    "title": "Always — #LikeAGirl",
+    "brand": "Always（护舒宝）·女性护理",
+    "agency": "Leo Burnett（多伦多/芝加哥，2014）",
+    "商业目标": "Procter & Gamble旗下Always面临青春期年轻女孩在成长过程中「自信断崖式下滑」的社会问题（调研显示青春期女孩自信指数下降最剧烈的时刻，恰好是初潮前后）。Always需要从一个「卫生巾品牌」上升为「女孩成长路上的支持者」，赢得Z世代消费者及其母亲的情感认同与品牌忠诚。",
+    "核心问题": "卫生巾广告长期笼罩在「蓝色液体」「模糊叙事」「抽象女性形象」的隐形规范里——品牌不敢大声说月经，怕消费者不适。结果就是：品牌传递的讯号是「这事让人尴尬，我们轻轻带过」——这恰恰对正在经历身体变化的青春期女孩造成了最深的伤害：如果连卖卫生巾的品牌都不敢提，那我的身体是不是真的「丢人」？",
+    "核心洞察": "「像女孩一样跑步」「像女孩一样投球」——这些短语在日常生活中被当作嘲笑/贬低他人的开场白。它不是关于女孩，它是关于「女孩意味着弱」这个全社会默认的潜台词。而这种潜台词，在青春期女孩最需要力量感的年纪，潜移默化地告诉她们：「做女孩是丢人的。」一旦被点破，每个成年人都会立刻想起自己听过这句话的时刻。Always不是要教女孩怎么对抗世界——它要做的只是拆穿一句话，剩下的让女孩们自己来。",
+    "传播任务": "把「像女孩一样」从一个被扔进垃圾桶的贬义词，折起来、擦干净、重新裱起来送给每一个女孩——「是的，像女孩一样，然后呢？」",
+    "创意构思": "Leo Burnett 2014年发起#LikeAGirl# campaign。核心手法是让不同年龄段的人在镜头前「像女孩一样奔跑」「像女孩一样投球」——成年男女纷纷做出一系列软弱的、做作的夸张动作。但当导演问同样的问题给10岁以下的女孩时——她们全力冲刺、用力投掷，拼尽身体里的每一丝力气。三分钟短片上线YouTube后3天破面播放，社交媒体上#LikeAGirl#被全球数以千万计的女性、男性、名人转发。该campaign不仅让Always品牌好感度飙升、市场份额增长，更被广泛认为是「femvertising（女性主义广告）」运动的里程碑——它证明了品牌的社会责任不是慈善，是好生意。",
+    "link": "https://www.adsoftheworld.com/campaigns/like-a-girl"
+  },
+  "quote": {
+    "text": "\"Nobody reads ads. People read what interests them, and sometimes it's an ad.\"",
+    "author": "Howard Luck Gossage"
+  }
+};
 
-function navigate(dir) {
-  const newIdx = currentIndex - dir;
-  if (newIdx < 0 || newIdx >= dates.length) return;
-  currentIndex = newIdx;
-  renderDate(dates[currentIndex]);
-  window.scrollTo({ top: document.querySelector('.nav-bar').offsetTop - 10, behavior: 'smooth' });
-}
+BRIEFINGS['2026.06.04'] = {
+  "date": "2026.06.04",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "Lego — The Play Maker",
+      "brand": "Lego·玩具",
+      "agency": "Our LEGO Agency (OLA)",
+      "商业目标": "全球调研显示44%的家庭没有足够的亲子玩耍时间，Lego需要从「卖积木」转型为「卖家庭幸福时刻」，借助Jason Momoa的明星影响力唤醒父母对亲子玩耍的重视，驱动夏季玩具销售旺季的购买转化。",
+      "核心问题": "Lego一直被看作「孩子的玩具」——父母买单但不参与。品牌讲了几十年「创造力」「想象力」，但成年人听不进去——他们太忙、太累、觉得玩是浪费时间。Lego需要找到一个成年人也会停下来听的理由。",
+      "核心洞察": "研究发现每周只需5小时家庭玩耍，就能显著提升家庭幸福感——比多数家庭每周看电视或刷手机的时间还少。问题不是没时间，是没意识到「玩」不是消耗时间，是创造连接。Jason Momoa作为一个「硬汉型男」，公开谈论和孩子们玩乐高、做音乐、爬树——他证明了「玩」不是幼稚，是一个成年人保持创造力和连接感的方式。",
+      "传播任务": "让两个积木碰撞的「咔嗒」声成为家庭播放键——不是让孩子自己搭，是让全家一起坐下来的信号",
+      "创意构思": "Jason Momoa主演公共服务式广告短片——「Playmaker Jason」发布总计划，用「brick click」（两个乐高积木碰撞的清脆声）作为打开创意世界的钥匙。全片以温暖幽默的调性，鼓励家庭每天挤出几分钟一起玩耍。核心信息「Mission: Never Stop Playing」——不是对孩子的说教，是一个硬汉给所有成年人的邀请。广告片6月刚刚上线，极新鲜。",
+      "link": "https://www.adsoftheworld.com/campaigns/the-play-maker"
+    },
+    {
+      "num": 2,
+      "title": "Take9 — Count Before You Click",
+      "brand": "Take9·网络安全 / 公共服务",
+      "agency": "Bully Pulpit International",
+      "商业目标": "Craigslist创始人Craig Newmark创办的非营利组织Take9，需要将「数9秒再点击」塑造成全民数字安全习惯，在AI诈骗爆发式增长（2025年美国损失159亿美元）的背景下保护普通消费者，提升品牌认知度与行为改变率。",
+      "核心问题": "安全教育几十年如一日地枯燥——「不要点陌生链接」「警惕可疑来电」——没人听。更大问题是：骗子利用的是人类本能——虚假紧迫感让理性下线。诈骗不是因为你蠢，是因为你赶时间。",
+      "核心洞察": "9秒——一个连孩子都会数的数字——足以打断恐慌思维循环。骗子最怕的不是聪明人，是不赶时间的人。而世界上最会数数的是谁？《芝麻街》的Count von Count伯爵——他已经数了2500年。关键受众是「三明治一代」（千禧一代和X世代）：他们既要保护孩子上网安全又要照顾父母不被诈骗，且很多人是看着Count von Count学会数数的。",
+      "传播任务": "让9秒的停顿不再「多此一举」，而是Count von Count和普通人之间的一场默契——跟着伯爵一起数：1, 2, 3... 啊哈，那是诈骗！",
+      "创意构思": "首发TVC《Jazzercise》中，Count von Count带领一位女性做爵士健身操——她收到假冒银行警报，伯爵引导她做9秒脚踝轻拍，9秒的停顿让她成功识别诈骗红⛳。系列短片覆盖线性电视、流媒体和社交平台，精准锁定三明治一代。伯爵的可爱与权威并存——他是数数专家，永远不会数错，所以当他让你数到9，你最好照做。",
+      "link": "https://www.adsoftheworld.com/campaigns/count-before-you-click"
+    },
+    {
+      "num": 3,
+      "title": "亨氏 — 这里有一份令宝宝幸福的Offer！",
+      "brand": "亨氏·婴幼儿辅食 / 调味品",
+      "agency": "好旺角 GMKOK 上海",
+      "商业目标": "520营销节点打破「品牌向消费者告白」的套路，通过宝宝真实的美味反应建立产品信任，强化亨氏在婴幼儿辅食赛道的专业形象，同时撬动宝妈宝爸群体的社交分享与购买决策。",
+      "核心问题": "婴幼儿辅食营销长期陷于功能说服——讲营养、讲配方、讲有机认证。品牌在「教育家长」，但家长已经免疫了。亨氏需要的不是再多一张成分表，是一个让家长主动掏出手机拍照分享的瞬间。",
+      "核心洞察": "去年CNY拍摄时，片场意外发现小朋友吃糖醋排骨的样子把全体工作人员都看饿了——没有表演、没有引导，孩子对美味的真实反应就是最好的美味代言。宝宝不吃饭可能不是挑食，是还没遇到对的味道。最好的信任状不是实验室数据，是宝宝埋头干饭的视频——它会让每一个宝妈宝爸心里涌出一句：「我孩子也这样就好了。」",
+      "传播任务": "不去教育妈妈怎么喂孩子——让妈妈亲眼看到：有了亨氏，宝宝自己会交出「光盘行动」的答卷",
+      "创意构思": "亨氏向全国宝宝发出一份「令宝宝幸福的Offer」——一场充满仪式感的「童趣面试」。没有严格要求、没有繁琐流程，只要宝宝爱吃亨氏且愿意展示干饭的可爱模样，就可以来赴这场幸福之约。亨氏随机挑选50位「面试」的宝宝送出丰厚入职大礼包。campaign以「Let's make life delicious」收束——在520有爱节点，品牌告白不是单向输出，是一次让宝宝「回信」的双向奔赴。代理商好旺角GMKOK操刀。",
+      "link": "https://www.digitaling.com/projects/368669.html"
+    }
+  ],
+  "classic": {
+    "title": "Old Spice — The Man Your Man Could Smell Like",
+    "brand": "Old Spice·男士护理",
+    "agency": "Wieden+Kennedy（2010）",
+    "商业目标": "P&G旗下的Old Spice面临品牌老化危机——年轻人觉得它是「爷爷那辈的古龙水」。需要在超级碗上用一次彻底的形象焕新，让18-34岁男性（及他们的伴侣）重新认识这个品牌，驱动沐浴露等新品类销售转化。",
+    "核心问题": "Old Spice的品牌遗产是一座围城——经典帆船瓶和哨子声是几代人的记忆资产，但也让年轻人敬而远之。更大的挑战：男士沐浴露是极低介入品类——没人会在超市货架前花超过3秒选择一瓶沐浴露。P&G不能丢掉「经典」，但也不能继续当「老古董」。",
+    "核心洞察": "男士护理的真正购买决策者往往是女性——女朋友、妻子在帮男人买沐浴露。而且男人对「男性气质」的焦虑从未消失——他们想闻起来迷人，但不想承认自己在乎。如果把广告拍成「女人写给男人的梦幻情书」：男人不会觉得被冒犯（因为说话的是女人），女人会笑着转发（因为说的是她们没说出口的愿望）。",
+    "传播任务": "把Old Spice从一个「用起来还行」的老牌子变成一个「用了你就是我男人」的性感文化符号",
+    "创意构思": "前NFL球员Isaiah Mustafa赤裸上身，在30秒内从浴室瞬间转移到帆船、再骑到马背上——荒诞到让人停不下来的视觉奇观，搭配机关枪式文案：「Hello ladies, look at your man, now back to me... Sadly, he isn't me.」全片一镜到底，无CG。超级碗播出后72小时内YouTube播放破1200万。W+K团队紧接着在48小时内用社交媒体实时回复粉丝评论，拍摄了186条个性化短视频（包括回应Alyssa Milano等名人），创造了「实时互动广告」的全新模式。Old Spice沐浴露销量3个月内增长107%，品牌从「爷爷的香水」变成千禧一代的文化符号。",
+    "link": ""
+  },
+  "quote": {
+    "text": "\"People don't read ads. They read what interests them. Sometimes it's an ad.\"",
+    "author": "Howard Gossage"
+  }
+};
+
+BRIEFINGS['2026.06.03'] = {
+  "date": "2026.06.03",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "Coors Light — Cold As The Rockies",
+      "brand": "Coors Light·啤酒/酒精饮料",
+      "agency": "Rethink（加拿大/美国）",
+      "商业目标": "夏季啤酒消费旺季，Coors Light以标志性「蓝色雪山变温罐」为核心视觉资产，强化品牌「极致冰爽」的品类心智，驱动夏季即饮场景的货架选择与品牌偏好。",
+      "核心问题": "啤酒品牌的「冰爽」诉求千篇一律——所有人都说自己的啤酒是冰的。Coors Light需要在视觉表达上创造无法被模仿的差异化，让「冷」不靠文案说。",
+      "核心洞察": "人们不只是喜欢啤酒，人们喜欢的是冰啤酒。「冷」不是一个参数，是一种感官释放——夏天最爽的时刻不是喝啤酒，是罐子上蓝色雪山亮起来的那一刻。",
+      "传播任务": "用热成像镜头拍摄「冷」——让「冰爽」不靠文案说，靠视觉直接打",
+      "创意构思": "全片使用红外热成像摄影机拍摄——高温场景呈现橙红色，一瓶Coors Light射出冷蓝色，如同一座移动的「蓝色冰箱」。在夏日烧烤、露营地、海滩等高温场景中，视觉对比强烈，全程零对白——冷的感觉不需要翻译。配合OOH和Meta社媒矩阵，6月1日起全美上线。",
+      "link": "https://www.adsoftheworld.com/campaigns/cold-as-the-rockies"
+    },
+    {
+      "num": 2,
+      "title": "Kaiser Permanente — A Better Idea for Health Care",
+      "brand": "Kaiser Permanente·医疗健康/保险",
+      "agency": "Droga5 New York（美国）",
+      "商业目标": "Kaiser Permanente启动多年品牌升级战略，将品牌从传统医疗保险机构重新定义为「整合式健康体验」，拉开与单一保险公司或单一医疗服务商之间的认知差距，巩固2,500万会员的忠诚度。",
+      "核心问题": "在美国，保险和医疗是两套互不对话的系统——一个管赔付，一个管看病，消费者在两个体系之间被反复踢皮球。没有人相信一家公司能同时做好保险和医疗。",
+      "核心洞察": "健康不是一系列互不关联的科室分诊——身体、心理、社交健康是一体三面。真正的好医疗不应该让消费者自己去「拼凑」——它应该是一张完整的网。",
+      "传播任务": "用定格动画把「整合医疗」从一个抽象概念变成一个看得见的「健康小宇宙」",
+      "创意构思": "全片采用定格动画（stop-motion），主角「Son」在一个围绕Kaiser Permanente构建的微型健康世界中穿行——从身体检查、心理支持到社交健康，所有环节无缝衔接。品牌视觉同步焕新，引入Helios符号代表「以人为中心的进步」。新logo和视觉系统贯穿所有触点，6月1日全国上线。",
+      "link": "https://www.adsoftheworld.com/campaigns/a-better-idea-for-health-care"
+    },
+    {
+      "num": 3,
+      "title": "vivo — 会飞的企鹅",
+      "brand": "vivo·手机影像/消费电子",
+      "agency": "Pitchina 大创意（上海）",
+      "商业目标": "六一儿童节节点，vivo以一支极富工艺美学的定格动画传递「没有人生来伟大，但可以成为伟大」的品牌理念，同时将手机影像能力作为创意实现工具进行产品力展示，双向驱动品牌好感与产品认知。",
+      "核心问题": "儿童节广告年年做、人人做，套路高度同质——要么煽情、要么卖萌。vivo需要在「大家都做儿童节」的噪音中，做出一支真正让人停下来看的作品。",
+      "核心洞察": "孩子的小脑瓜里有一个成年人不敢问的问题——「企鹅也是鸟，为什么不能飞？」最好的童真不是卖萌，是认真对待每一个「不切实际」的问题。",
+      "传播任务": "用3600张纯手工羊毛毡，拍一只不服输的企鹅——让大人和孩子一起相信「没有人生来伟大，但可以成为伟大」",
+      "创意构思": "全片由3600张纯手工羊毛毡逐帧拍摄制成的定格动画——一只企鹅不服气地问「为什么鸟能飞我不能」，于是用尽各种方式学飞。全片用vivo手机拍摄，证明旗舰影像能力足以完成专业级定格动画创作。线下同步举办「童梦放映厅」点映礼，邀请小朋友和媒体亲自体验手机拍摄定格动画，完成从「看广告」到「玩广告」的体验闭环。",
+      "link": "https://www.digitaling.com/projects/165087.html"
+    }
+  ],
+  "classic": {
+    "title": "Dove — Campaign for Real Beauty",
+    "brand": "多芬·个人护理",
+    "agency": "Ogilvy（奥美，2004）",
+    "商业目标": "2004年，多芬在全球个人护理市场的份额被P&G和欧莱雅持续挤压，品牌形象模糊。多芬需要一次颠覆性的品牌重新定义，从「一块温和的香皂」变成「一个与女性站在一起的品牌」。",
+    "核心问题": "美容广告几十年来用同一套谎言——零瑕疵模特、精修到不存在的皮肤。消费者内心知道这些标准不可企及，但仍然被其奴役。多芬的产品线覆盖从清洁到护肤的广泛人群，这意味着它不能像高端品牌那样只讨好「完美女性」——它需要包容真实的大多数。",
+    "核心洞察": "一项全球调研显示——只有2%的女性认为自己是美丽的。这不是一个数据问题，这是一个「美的定义权」问题。谁规定的美只能是广告里那一种样子？如果多芬把定义权还给女性自己呢？",
+    "传播任务": "不做「用了多芬就会变美」的承诺——做第一个站出来问「谁说你不美」的品牌",
+    "创意构思": "2004年，多芬发起「真美运动」，在全球范围投放一组广告，展示普通女性（非模特）的照片，旁边是选项按钮——「有皱纹？」「有雀斑？」「有曲线？」——邀请路人投票：她们是「瑕疵」还是「美丽」？这场campaign的激进之处在于：广告里甚至没有放产品。它卖的不再是一块香皂——它卖的是「你本来就很美」这个一直被美容行业剥夺的认知。该campaign让多芬全球销售额在10年内从25亿增长到40亿美元，并被广泛认为开启了「品牌使命（brand purpose）」营销时代的序幕。",
+    "link": ""
+  },
+  "quote": {
+    "text": "\"The most powerful element in advertising is the truth.\"",
+    "author": "William Bernbach"
+  }
+};
+
+BRIEFINGS['2026.06.02'] = {
+  "date": "2026.06.02",
+  "fresh": [],
+  "classic": null,
+  "quote": {
+    "text": "\"Make it simple. Make it memorable. Make it inviting to look at. Make it fun to read.\"",
+    "author": "Leo Burnett"
+  }
+};
+
+BRIEFINGS['2026.06.01'] = {
+  "date": "2026.06.01",
+  "fresh": [],
+  "classic": null,
+  "quote": null
+};
 
 // Init
 renderDate(dates[0]);
