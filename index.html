@@ -35,229 +35,72 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
-
-/* Hero */
 .hero {
-  text-align: center;
-  padding: 60px 20px 40px;
+  text-align: center; padding: 60px 20px 40px;
   background: linear-gradient(180deg, #faf6ee 0%, var(--bg) 100%);
   border-bottom: 1px solid var(--border);
 }
-.hero h1 {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-}
+.hero h1 { font-size: 28px; font-weight: 700; letter-spacing: 2px; margin-bottom: 8px; }
 .hero h1 span { color: var(--accent); }
-.hero .subtitle {
-  color: var(--text2);
-  font-size: 14px;
-  margin-bottom: 16px;
-}
+.hero .subtitle { color: var(--text2); font-size: 14px; margin-bottom: 16px; }
 .hero .badge {
-  display: inline-block;
-  background: var(--tag-bg);
-  color: var(--tag-text);
-  padding: 4px 14px;
-  border-radius: 20px;
-  font-size: 12px;
-  letter-spacing: 1px;
+  display: inline-block; background: var(--tag-bg); color: var(--tag-text);
+  padding: 4px 14px; border-radius: 20px; font-size: 12px; letter-spacing: 1px;
 }
-
-/* Navigation */
 .nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 0; border-bottom: 1px solid var(--border); margin-bottom: 24px;
 }
-.nav-bar .nav-date {
-  font-size: 18px;
-  font-weight: 600;
-}
-.nav-bar .nav-arrows {
-  display: flex;
-  gap: 8px;
-}
+.nav-bar .nav-date { font-size: 18px; font-weight: 600; }
+.nav-bar .nav-arrows { display: flex; gap: 8px; }
 .nav-bar .nav-arrows button {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text);
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  width: 36px; height: 36px; border-radius: 8px; cursor: pointer; font-size: 16px;
   transition: all .2s;
 }
 .nav-bar .nav-arrows button:hover { background: var(--surface2); }
 .nav-bar .nav-arrows button:disabled { opacity: 0.3; cursor: not-allowed; }
-
-/* Case Card */
 .case-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--card-radius);
-  padding: 20px;
-  margin-bottom: 16px;
-  transition: border-color .2s;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--card-radius); padding: 20px; margin-bottom: 16px;
 }
-.case-card:hover { border-color: #333; }
-
-.case-card .case-title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-.case-card .case-title .case-num {
-  color: var(--accent);
-  margin-right: 8px;
-}
-.case-card .case-meta {
-  color: var(--text3);
-  font-size: 13px;
-  margin-bottom: 12px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.case-card .case-meta .tag {
-  background: var(--surface2);
-  padding: 2px 10px;
-  border-radius: 4px;
-  font-size: 12px;
-}
-
-.case-detail {
-  display: grid;
-  gap: 8px;
-}
-.case-detail .field {
-  font-size: 14px;
-  line-height: 1.7;
-}
-.case-detail .field .label {
-  color: var(--text3);
-  font-size: 12px;
-  display: block;
-  margin-bottom: 2px;
-}
-.case-detail .field .link {
-  color: var(--accent);
-  text-decoration: none;
-  word-break: break-all;
-  font-size: 13px;
-}
+.case-card:hover { border-color: #ccc; }
+.case-card .case-title { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+.case-card .case-title .case-num { color: var(--accent); margin-right: 8px; }
+.case-card .case-meta { color: var(--text3); font-size: 13px; margin-bottom: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+.case-card .case-meta .tag { background: var(--surface2); padding: 2px 10px; border-radius: 4px; font-size: 12px; }
+.case-detail { display: grid; gap: 8px; }
+.case-detail .field { font-size: 14px; line-height: 1.7; }
+.case-detail .field .label { color: var(--text3); font-size: 12px; display: block; margin-bottom: 2px; }
+.case-detail .field .link { color: var(--accent); text-decoration: none; word-break: break-all; font-size: 13px; }
 .case-detail .field .link:hover { text-decoration: underline; }
-
-/* Section header */
 .section-header {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text2);
-  margin: 28px 0 16px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-size: 14px; font-weight: 600; color: var(--text2);
+  margin: 28px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 8px;
 }
-.section-header .dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  display: inline-block;
-}
+.section-header .dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
 .section-header .dot.fresh { background: #4ade80; }
 .section-header .dot.classic { background: #f97316; }
-
-/* Quote */
 .quote-section {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--card-radius);
-  padding: 24px;
-  margin: 24px 0;
-  text-align: center;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--card-radius); padding: 24px; margin: 24px 0; text-align: center;
 }
-.quote-section .quote-text {
-  font-size: 15px;
-  font-style: italic;
-  color: var(--text);
-  line-height: 1.8;
-  margin-bottom: 8px;
-}
-.quote-section .quote-author {
-  color: var(--text3);
-  font-size: 13px;
-}
-
-/* CTA section */
+.quote-section .quote-text { font-size: 15px; font-style: italic; line-height: 1.8; margin-bottom: 8px; }
+.quote-section .quote-author { color: var(--text3); font-size: 13px; }
 .cta-section {
-  margin: 40px 0;
-  padding: 32px 24px;
+  margin: 40px 0; padding: 32px 24px;
   background: linear-gradient(135deg, var(--surface), var(--surface2));
-  border: 1px solid var(--border);
-  border-radius: var(--card-radius);
-  text-align: center;
+  border: 1px solid var(--border); border-radius: var(--card-radius); text-align: center;
 }
-.cta-section h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-.cta-section p {
-  color: var(--text2);
-  font-size: 14px;
-  margin-bottom: 20px;
-}
+.cta-section h3 { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+.cta-section p { color: var(--text2); font-size: 14px; margin-bottom: 20px; }
 .cta-section .cta-btn {
-  display: inline-block;
-  background: var(--accent);
-  color: #fff;
-  padding: 12px 32px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 15px;
-  text-decoration: none;
-  transition: all .2s;
-  cursor: default;
+  display: inline-block; background: var(--accent); color: #fff;
+  padding: 12px 32px; border-radius: 8px; font-weight: 600; font-size: 15px; cursor: default;
 }
-.cta-section .cta-btn:hover { background: var(--accent2); }
-.cta-section .cta-note {
-  color: var(--text3);
-  font-size: 12px;
-  margin-top: 12px;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 32px 0;
-  color: var(--text3);
-  font-size: 12px;
-  border-top: 1px solid var(--border);
-}
-
-/* Loading / Empty */
-.loading {
-  text-align: center;
-  padding: 60px 20px;
-  color: var(--text3);
-}
-.empty-state {
-  text-align: center;
-  padding: 40px 20px;
-  color: var(--text3);
-}
-
-/* Media queries */
+.cta-section .cta-note { color: var(--text3); font-size: 12px; margin-top: 12px; }
+.footer { text-align: center; padding: 32px 0; color: var(--text3); font-size: 12px; border-top: 1px solid var(--border); }
 @media (max-width: 600px) {
   .hero { padding: 40px 16px 28px; }
   .hero h1 { font-size: 24px; }
@@ -269,7 +112,6 @@ body {
 </head>
 <body>
 
-<!-- Hero -->
 <div class="hero">
   <h1>📰 每日广告案例<span>早报</span></h1>
   <p class="subtitle">每天3个新鲜案例 + 1个经典案例 · 精炼拆解 · 广告人早八点必读</p>
@@ -278,7 +120,6 @@ body {
 
 <div class="container">
 
-<!-- Navigation -->
 <div class="nav-bar">
   <div class="nav-date" id="currentDate">—</div>
   <div class="nav-arrows">
@@ -287,12 +128,8 @@ body {
   </div>
 </div>
 
-<!-- Content -->
-<div id="contentArea">
-  <div class="loading">加载中...</div>
-</div>
+<div id="contentArea"><div class="loading">加载中...</div></div>
 
-<!-- CTA -->
 <div class="cta-section">
   <h3>🔒 订阅获取完整每日推送</h3>
   <p>每日早八点准时送达，不错过任何一个精彩案例。</p>
@@ -302,10 +139,7 @@ body {
 
 </div>
 
-<!-- Footer -->
-<div class="footer">
-  <p>每日广告案例早报 &copy; &mdash; 广告案例精选与拆解</p>
-</div>
+<div class="footer"><p>每日广告案例早报 &copy; &mdash; 广告案例精选与拆解</p></div>
 
 <script>
 // ===================== DATA =====================
@@ -329,8 +163,61 @@ BRIEFINGS['2026.06.04'] = {"date": "2026.06.04", "fresh": [{"num": 1, "title": "
 
 BRIEFINGS['2026.06.03'] = {"date": "2026.06.03", "fresh": [{"num": 1, "title": "Coors Light — Cold As The Rockies", "brand": "Coors Light · 啤酒/酒精饮料 · Rethink（加拿大/美国）", "agency": "", "goal": "夏季啤酒消费旺季，Coors Light以标志性「蓝色雪山变温罐」为核心视觉资产，强化品牌「极致冰爽」的品类心智，驱动夏季即饮场景的货架选择与品牌偏好。", "problem": "啤酒品牌的「冰爽」诉求千篇一律——所有人都说自己的啤酒是冰的。Coors Light需要在视觉表达上创造无法被模仿的差异化，让「冷」不靠文案说。", "insight": "人们不只是喜欢啤酒，人们喜欢的是冰啤酒。「冷」不是一个参数，是一种感官释放——夏天最爽的时刻不是喝啤酒，是罐子上蓝色雪山亮起来的那一刻。", "task": "用热成像镜头拍摄「冷」——让「冰爽」不靠文案说，靠视觉直接打", "idea": "全片使用红外热成像摄影机拍摄——高温场景呈现橙红色，一瓶Coors Light射出冷蓝色，如同一座移动的「蓝色冰箱」。在夏日烧烤、露营地、海滩等高温场景中，视觉对比强烈，全程零对白——冷的感觉不需要翻译。配合OOH和Meta社媒矩阵，6月1日起全美上线。", "link": "https://www.adsoftheworld.com/campaigns/cold-as-the-rockies"}, {"num": 2, "title": "Kaiser Permanente — A Better Idea for Health Care", "brand": "Kaiser Permanente · 医疗健康/保险 · Droga5 New York（美国）", "agency": "", "goal": "Kaiser Permanente启动多年品牌升级战略，将品牌从传统医疗保险机构重新定义为「整合式健康体验」，拉开与单一保险公司或单一医疗服务商之间的认知差距，巩固2,500万会员的忠诚度。", "problem": "在美国，保险和医疗是两套互不对话的系统——一个管赔付，一个管看病，消费者在两个体系之间被反复踢皮球。没有人相信一家公司能同时做好保险和医疗。", "insight": "健康不是一系列互不关联的科室分诊——身体、心理、社交健康是一体三面。真正的好医疗不应该让消费者自己去「拼凑」——它应该是一张完整的网。", "task": "用定格动画把「整合医疗」从一个抽象概念变成一个看得见的「健康小宇宙」", "idea": "全片采用定格动画（stop-motion），主角「Son」在一个围绕Kaiser Permanente构建的微型健康世界中穿行——从身体检查、心理支持到社交健康，所有环节无缝衔接。品牌视觉同步焕新，引入Helios符号代表「以人为中心的进步」。新logo和视觉系统贯穿所有触点，6月1日全国上线。", "link": "https://www.adsoftheworld.com/campaigns/a-better-idea-for-health-care"}, {"num": 3, "title": "vivo — 会飞的企鹅", "brand": "vivo · 手机影像/消费电子 · Pitchina 大创意（上海）", "agency": "", "goal": "六一儿童节节点，vivo以一支极富工艺美学的定格动画传递「没有人生来伟大，但可以成为伟大」的品牌理念，同时将手机影像能力作为创意实现工具进行产品力展示，双向驱动品牌好感与产品认知。", "problem": "儿童节广告年年做、人人做，套路高度同质——要么煽情、要么卖萌。vivo需要在「大家都做儿童节」的噪音中，做出一支真正让人停下来看的作品。", "insight": "孩子的小脑瓜里有一个成年人不敢问的问题——「企鹅也是鸟，为什么不能飞？」最好的童真不是卖萌，是认真对待每一个「不切实际」的问题。", "task": "用3600张纯手工羊毛毡，拍一只不服输的企鹅——让大人和孩子一起相信「没有人生来伟大，但可以成为伟大」", "idea": "全片由3600张纯手工羊毛毡逐帧拍摄制成的定格动画——一只企鹅不服气地问「为什么鸟能飞我不能」，于是用尽各种方式学飞。全片用vivo手机拍摄，证明旗舰影像能力足以完成专业级定格动画创作。线下同步举办「童梦放映厅」点映礼，邀请小朋友和媒体亲自体验手机拍摄定格动画，完成从「看广告」到「玩广告」的体验闭环。", "link": "https://www.digitaling.com/projects/165087.html"}], "classic": {"title": "Dove — Campaign for Real Beauty", "brand": "多芬 · 个人护理 · Ogilvy（奥美，2004）", "agency": "", "goal": "2004年，多芬在全球个人护理市场的份额被P&G和欧莱雅持续挤压，品牌形象模糊。多芬需要一次颠覆性的品牌重新定义，从「一块温和的香皂」变成「一个与女性站在一起的品牌」。", "problem": "美容广告几十年来用同一套谎言——零瑕疵模特、精修到不存在的皮肤。消费者内心知道这些标准不可企及，但仍然被其奴役。多芬的产品线覆盖从清洁到护肤的广泛人群，这意味着它不能像高端品牌那样只讨好「完美女性」——它需要包容真实的大多数。", "insight": "一项全球调研显示——只有2%的女性认为自己是美丽的。这不是一个数据问题，这是一个「美的定义权」问题。谁规定的美只能是广告里那一种样子？如果多芬把定义权还给女性自己呢？", "task": "不做「用了多芬就会变美」的承诺——做第一个站出来问「谁说你不美」的品牌", "idea": "2004年，多芬发起「真美运动」，在全球范围投放一组广告，展示普通女性（非模特）的照片，旁边是选项按钮——「有皱纹？」「有雀斑？」「有曲线？」——邀请路人投票：她们是「瑕疵」还是「美丽」？这场campaign的激进之处在于：广告里甚至没有放产品。它卖的不再是一块香皂——它卖的是「你本来就很美」这个一直被美容行业剥夺的认知。该campaign让多芬全球销售额在10年内从25亿增长到40亿美元，并被广泛认为开启了「品牌使命（brand purpose）」营销时代的序幕。", "link": ""}, "quote": {"text": "\"The most powerful element in advertising is the truth.\"", "author": "William Bernbach"}};
 
-// Init
-renderDate(dates[0]);
+// ===================== APP =====================
+const dates = Object.keys(BRIEFINGS).sort().reverse();
+let currentIndex = 0;
+
+function renderDate(dateStr) {
+  const data = BRIEFINGS[dateStr];
+  if (!data) {
+    document.getElementById('contentArea').innerHTML = '<div class="empty-state">暂无该日期内容</div>';
+    document.getElementById('currentDate').textContent = dateStr;
+    return;
+  }
+  const d = new Date(dateStr);
+  const weekday = ['日','一','二','三','四','五','六'][d.getDay()];
+  document.getElementById('currentDate').textContent = dateStr + ' 周' + weekday;
+  let html = '';
+  html += '<div class="section-header"><span class="dot fresh"></span> 新鲜案例</div>';
+  data.fresh.forEach(c => {
+    html += '<div class="case-card"><div class="case-title"><span class="case-num">#' + c.num + '</span>' + c.title + '</div><div class="case-meta"><span>' + (c.brand || '') + '</span>' + (c.agency ? '<span class="tag">' + c.agency + '</span>' : '') + '</div><div class="case-detail">';
+    if (c.goal) html += '<div class="field"><span class="label">商业目标</span>' + c.goal + '</div>';
+    if (c.problem) html += '<div class="field"><span class="label">核心问题</span>' + c.problem + '</div>';
+    if (c.insight) html += '<div class="field"><span class="label">核心洞察</span>' + c.insight + '</div>';
+    if (c.task) html += '<div class="field"><span class="label">传播任务</span>' + c.task + '</div>';
+    if (c.idea) html += '<div class="field"><span class="label">创意构思</span>' + c.idea + '</div>';
+    if (c.link) html += '<div class="field"><a class="link" href="' + c.link + '" target="_blank" rel="noopener">🔗 查看原案例 →</a></div>';
+    html += '</div></div>';
+  });
+  html += '<div class="section-header"><span class="dot classic"></span> 经典案例</div>';
+  const cls = data.classic;
+  if (cls) {
+    html += '<div class="case-card"><div class="case-title">' + cls.title + '</div><div class="case-meta"><span>' + (cls.brand || '') + '</span>' + (cls.agency ? '<span class="tag">' + cls.agency + '</span>' : '') + '</div><div class="case-detail">';
+    if (cls.goal) html += '<div class="field"><span class="label">商业目标</span>' + cls.goal + '</div>';
+    if (cls.problem) html += '<div class="field"><span class="label">核心问题</span>' + cls.problem + '</div>';
+    if (cls.insight) html += '<div class="field"><span class="label">核心洞察</span>' + cls.insight + '</div>';
+    if (cls.task) html += '<div class="field"><span class="label">传播任务</span>' + cls.task + '</div>';
+    if (cls.idea) html += '<div class="field"><span class="label">创意构思</span>' + cls.idea + '</div>';
+    if (cls.link) html += '<div class="field"><a class="link" href="' + cls.link + '" target="_blank" rel="noopener">🔗 查看原案例 →</a></div>';
+    html += '</div></div>';
+  }
+  if (data.quote && data.quote.text) {
+    html += '<div class="quote-section"><div class="quote-text">' + data.quote.text + '</div><div class="quote-author">—— ' + data.quote.author + '</div></div>';
+  }
+  document.getElementById('contentArea').innerHTML = html;
+  document.getElementById('prevBtn').disabled = currentIndex >= dates.length - 1;
+  document.getElementById('nextBtn').disabled = currentIndex <= 0;
+}
+
+function navigate(dir) {
+  const newIdx = currentIndex - dir;
+  if (newIdx < 0 || newIdx >= dates.length) return;
+  currentIndex = newIdx;
+  renderDate(dates[currentIndex]);
+  window.scrollTo({ top: document.querySelector('.nav-bar').offsetTop - 10, behavior: 'smooth' });
+}
+
+if (dates.length > 0) renderDate(dates[0]);
 </script>
 </body>
 </html>
