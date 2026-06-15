@@ -116,7 +116,7 @@ body {
 <div class="hero">
   <h1>📰 每日广告案例<span>早报</span></h1>
   <p class="subtitle">每天3个新鲜案例 + 1个经典案例 · 精炼拆解 · 广告人早八点必读</p>
-  <span class="badge">每日更新 · 免费预览最近 7 天内容</span>
+  <span class="badge">每日更新 · 免费预览最近 7 天内容最近 7 天内容</span>
 </div>
 
 <div class="container">
@@ -135,7 +135,7 @@ body {
   <h3>🔒 订阅获取完整每日推送</h3>
   <p>每日早八点准时送达，不错过任何一个精彩案例。</p>
   <div class="cta-btn">订阅入口 · 即将开放</div>
-  <p class="cta-note">当前免费预览展示，正式订阅即将上线</p>
+  <p class="cta-note">当前免费预览最近 7 天内容展示，正式订阅即将上线</p>
 </div>
 
 </div>
@@ -146,20 +146,435 @@ body {
 // ===================== DATA =====================
 const BRIEFINGS = {};
 
-BRIEFINGS['2026.06.14'] = {"date": "2026.06.14", "fresh": [{"num": 1, "title": "Advil — No Pain, More Gain / 没有疼痛，更多收获", "brand": "医药 · 止痛药 · Haleon", "agency": "", "goal": "借2026世界杯节点强化Advil运动止痛定位，建立与新一代运动员的情感连接。", "problem": "\"no pain no gain\"深植全球体育文化，运动员被鼓励忍痛前行，导致伤病恶化与长期健康隐患。", "insight": "真正的力量不在逞强忍痛——学会倾听身体信号、主动恢复，本身就是一种更高级的运动智慧。", "task": "重新定义运动疼痛话语，让\"no pain, more gain\"取代旧信条，成为Z世代运动员的行为准则。", "idea": "前美国国脚Jozy Altidore以亲身伤病经历发声，纽约快闪球场+户外大牌+达人内容矩阵，将止痛与自我关怀绑定为新的运动态度。", "link": "https://www.campaignlive.com/article/advil-former-usmnt-star-jozy-altidore-revise-no-pain-no-gain-adage/1961446"}, {"num": 2, "title": "Jägermeister Orange — Surprise / 惊喜", "brand": "烈酒 · 利口酒 · The Midnight Club", "agency": "", "goal": "推广新品Jägermeister Orange，在派对利口酒红海中建立独特口味心智。", "problem": "派对场景刺激物过载——闪光灯、音乐、人群、社交——新口味极易沦为背景噪音，无法被消费者真正记住。", "insight": "派对中最让人意外的不是任何视觉奇观，而是第一口酒的味觉冲击——最好的广告，藏在瓶子里。", "task": "以超现实幽默三部曲，让\"Jägermeister Orange = 派对最大惊喜\"成为全球社交共识。", "idea": "三支短片以荒诞反转为核心——生日派对发现人鱼、冰冻螃蟹复活大闹聚会、第一口酒让时间凝滞——所有离谱事件发生，众人仍只为酒的味道震惊。", "link": "https://www.campaignlive.com/article/chalamet-messi-best-star-studded-2026-fifa-world-cup-ads-far/1961380"}, {"num": 3, "title": "王老吉 × 哈兰德 — 满脑子都是哈兰德哈哈哈哈王老吉", "brand": "凉茶饮料 · 体育营销 · SG胜加", "agency": "", "goal": "世界杯赛季抢占看球场景，让王老吉成为看球标配饮品。", "problem": "夏天球星广告泛滥，如何让外国球星与中式凉茶产生独特记忆点。", "insight": "\"哈\"字天然串联哈兰德名字、夏天喘气、辣味嘶哈、看球欢呼与喝王老吉的爽感。", "task": "用\"哈兰德，哈王老吉\"打造洗脑记忆，让消费者看球即想喝王老吉。", "idea": "借《哈兰德之歌》旋律改编魔性TVC，哈兰德真人飞赴曼城拍摄，中文首秀反复强化\"哈～王老吉\"品牌联想，女友惊喜客串，制造破圈话题。", "link": "https://www.digitaling.com/projects/369383.html"}], "classic": {"title": "Volkswagen — Think Small（1959）", "brand": "汽车 · 平面广告 · DDB", "agency": "", "goal": "在崇尚\"更大更好\"的美国市场，成功销售小而丑的甲壳虫汽车。", "problem": "战后美国消费者迷恋大排量豪华车，甲壳虫与主流审美完全背道而驰，且带着\"二战敌人\"的原罪。", "insight": "消费者不傻——与其编造甲壳虫很大的谎言，不如诚实承认它的小，并让\"小\"成为智慧的选择。", "task": "用前所未有的诚实颠覆汽车广告套路，让甲壳虫成为反主流文化的符号。", "idea": "大幅留白版面上，一辆小小的甲壳虫占据角落，标题仅两个词：\"Think Small\"。文案以自嘲式幽默细数小的好处——好停车、省油、便宜。从此汽车广告不再只有华丽插画和夸夸其谈。", "link": ""}, "quote": {"text": "\"The rules are what the artist breaks. The memorable never emerged from a formula.\"", "author": "Bill Bernbach（DDB创始人）", "translation": "规则是艺术家用来打破的。令人难忘的东西从来不是从公式中产生的。"}};
+BRIEFINGS['2026.06.15'] = {
+  "date": "2026.06.15",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "Coca-Cola — No Better Feeling / 每一种情绪，可口可乐陪你感受",
+      "brand": "Beverage·饮料/体育赞助",
+      "agency": "WPP OpenX / Ogilvy / WPP Production",
+      "goal": "借2026世界杯强化Coca-Cola与足球的百年情感绑定，巩固其作为全球足球第一饮料品牌的心智地位。",
+      "problem": "世界杯营销信息过载，如何在万千品牌呐喊中，让可口可乐不只被\"看见\"，而是被\"感受\"。",
+      "insight": "足球最迷人的地方在于情绪的极致波动——一秒天堂、一秒地狱。真正让球迷记住的不是比分，而是那些与身边人共享的、被放大到极致的感受。而可口可乐，恰好是那个永远陪在你身边的\"情绪见证者\"。",
+      "task": "以\"Feel It All\"为全球统一主题，将可口可乐从\"看球必备饮料\"升级为\"足球情绪催化剂\"，让每一个熬夜、尖叫、拥抱的瞬间都有可口可乐在场。",
+      "idea": "集结WPP跨代理团队（OpenX+Ogilvy+WPP Production），打造全球整合Campaign；主题片捕捉足球场上瞬息万变的情绪切片——狂喜、紧张、心碎、期待，可口可乐始终出现在画面最真实的角落。配合全球社媒、户外、零售终端形成360°情绪包围。",
+      "link": "https://www.adsoftheworld.com/campaigns/no-better-feeling-fifa-world-cup-2026"
+    },
+    {
+      "num": 2,
+      "title": "Royal London — Royal London Works for You / 皇家伦敦，为你运转",
+      "brand": "Insurance/Investment·金融服务",
+      "agency": "VCCP",
+      "goal": "为英国老牌保险投资公司Royal London建立全新品牌定位，在金融品牌普遍\"冷冰冰\"的行业中脱颖而出。",
+      "problem": "保险和养老金品牌长期陷于功能说教与信任缺失——消费者觉得\"你只是想要我的钱\"，品牌需要重新证明\"我把你的利益放在第一位\"。",
+      "insight": "真正的\"以客户为中心\"不是一句口号，而是一种制度设计——Royal London作为互助制公司，没有股东分红压力，每一个决定天然为客户利益服务。这个结构性差异，就是最难得且不可复制的最佳品牌故事。",
+      "task": "将\"Mutuality（互助制）\"这一抽象的制度优势，转化为消费者可感知、可信赖的品牌承诺——\"我们为你运转，而非为股东\"。",
+      "idea": "通过电视TVC+户外大牌组合，以简洁、自信的视觉语言，具象化Royal London如何围绕客户生活运转——保单、养老金、投资，每一环都在暗中守护。6月12日发布，作为品牌全面焕新的首发战役。",
+      "link": "https://www.campaignlive.co.uk/article/royal-london-works-you-vccp/1961409"
+    },
+    {
+      "num": 3,
+      "title": "美的 × 哈兰德 — 家电健身 / Appliance Fitness",
+      "brand": "家电·体育营销/IP代言",
+      "agency": "美的内部团队",
+      "goal": "借挪威队时隔28年重返世界杯之机，强化美的与全球代言人哈兰德的内容绑定，提升品牌海外声量。",
+      "problem": "家电品牌做体育营销天然\"违和\"——冰箱空调与足球何干？传统代言人广告极易沦为\"球星念台词\"的无效投入。",
+      "insight": "哈兰德的个人魅力在于他的\"反差萌\"——顶级运动员的外表下藏着一本正经的幽默感。美的同样可以打破\"家电=无聊\"的刻板印象，让产品以一种意想不到的荒诞方式融入顶级运动员的日常。",
+      "task": "跳出传统运动员代言的热血路线，用荒诞幽默将美的产品与哈兰德产生独一无二的品牌记忆——让人看过就不会忘。",
+      "idea": "打造\"家电健身系统\"——冰箱门变成爆发力训练器、空调出风口化身耐力考验、洗衣机滚筒成为精准度挑战——哈兰德一本正经地在这些家电装备间训练。用一本正经的荒诞感，把产品品质（大容量、强风力、稳平衡）与顶级运动员特质巧妙挂钩。",
+      "link": "https://socialbeta.com/campaign/27723"
+    }
+  ],
+  "classic": {
+    "title": "De Beers — A Diamond is Forever / 钻石恒久远，一颗永流传（1948）",
+    "brand": "珠宝·平面/广播广告",
+    "agency": "N.W. Ayer & Son",
+    "goal": "在大萧条后钻石需求暴跌的背景下，为De Beers建立钻石与婚姻不可分割的联系，创造持久稳定的消费需求。",
+    "problem": "钻石在当时并非求婚必需品——它只是众多宝石中的一种，且\"贵、不实用\"的认知根深蒂固。如何在消费者心智中凭空建立一个全新的文化习俗？",
+    "insight": "钻石的物理特性——地球上最坚硬的物质——恰好完美隐喻\"永恒的爱情\"。而\"永恒\"也是婚姻最神圣的承诺。将两者绑定，钻石便从\"奢侈品\"变成\"必需品\"。",
+    "task": "创造一句能够世代流传的口号，让钻石成为订婚仪式的\"默认配置\"，同时通过持续宣传抑制二手钻石市场（维持价格稳定）。",
+    "idea": "1948年，N.W. Ayer女文案Frances Gerety在深夜加班时写下\"A Diamond is Forever\"，从此这四个词成为广告史上最伟大的Slogan之一。它不卖钻石的参数，而是贩卖\"永恒的爱\"这一人类终极情感需求。此后De Beers持续60年围绕这一核心叙事，将钻石求婚从\"美国中产习俗\"推广为全球文化共识。1999年《广告时代》评选为\"世纪最佳广告语\"。",
+    "link": ""
+  },
+  "quote": null
+};
 
-BRIEFINGS['2026.06.13'] = {"date": "2026.06.13", "fresh": [{"num": 1, "title": "NIKE — Script Nothing / 让剧本都作废", "brand": "运动 · 体育用品 · Wieden+Kennedy", "agency": "", "goal": "借2026世界杯强化Nike足球市场领导地位，激发年轻球员对品牌的情感认同。", "problem": "现代足球被过度战术化，年轻球员丧失本能与创造力，比赛逐渐失去观赏性。", "insight": "真正足球魅力不在刻板剧本中——当球员遵从内心本能，运动方能绽放极致魅力。", "task": "以史诗级影片号召全球年轻球员跳出战术框架，拥抱本能驱动的足球之美。", "idea": "6分钟片在好莱坞影棚拍摄，姆巴佩、C罗、哈兰德等巨星与坎通纳、小罗等传奇跳出\"剧本\"即兴表演，金·卡戴珊、LISA等跨界客串。", "link": "https://www.adsoftheworld.com/"}, {"num": 2, "title": "Uber Eats — Who Could Cook At a Time Like This?", "brand": "外卖 · 食品配送 · 待确认", "agency": "", "goal": "借世界杯观赛场景强化Uber Eats\"看球不做饭\"联想，提升赛事期间订单量。", "problem": "世界杯期间，消费者既想专注看球又需解决吃饭问题，烹饪与观赛形成冲突。", "insight": "在重要比赛时刻，没人应该被困厨房——食物应被送达，而不是被烹饪。", "task": "通过名人幽默演绎，让\"比赛日=Uber Eats日\"成为全球球迷的肌肉记忆。", "idea": "名厨Gordon Ramsay闯入球迷家中，举起外卖袋质问\"这种时候谁还做饭？\"，将地狱厨房犀利风格转为品牌幽默。", "link": "https://www.campaignlive.com/article/gordon-ramsay-crashes-kitchens-new-uber-eats-world-cup-campaign/1961146"}, {"num": 3, "title": "美团外卖 — 邀请你来和鲁迅先生Coffee Chat一下", "brand": "外卖 · 生活服务 · The N3 Agency 上海", "agency": "", "goal": "借上海咖啡文化节强化美团咖啡品类心智，提升站内咖啡订单与用户粘性。", "problem": "咖啡赛道竞争激烈，需在功能卖点之外找到差异化的文化情感连接点。", "insight": "年轻人喝咖啡两大需求——解困与清醒；鲁迅是能同时给予\"双重清醒\"的文化符号。", "task": "融合AI技术+历史名人IP，打造文化事件，让\"外卖咖啡\"成为年轻人情绪出口。", "idea": "用AI重现鲁迅形象，线下咖啡馆设互动屏让鲁迅问答职场倦怠、人际关系等当代困惑，推\"早\"字杯垫、\"一字胡\"吸管挂件等文创周边。", "link": "https://www.digitaling.com/projects/368038.html"}], "classic": {"title": "Apple — 1984 (1984)", "brand": "科技 · 个人电脑 · Chiat/Day", "agency": "", "goal": "为Macintosh上市制造轰动，在超级碗宣告苹果到来，打破IBM市场垄断。", "problem": "IBM垄断PC市场，消费者面对的是由蓝色巨人主导的同质化计算世界。", "insight": "人们渴望自由与个性，技术不应是冰冷控制工具而是解放个体创造力的武器。", "task": "一支不展示产品但让人永生难忘的超级碗广告，创造话题引爆全国讨论。", "idea": "Ridley Scott执导，以《1984》为隐喻，女运动员掷铁锤砸碎老大哥屏幕，象征Macintosh将打破IBM垄断。仅播出一次便成传奇。", "link": ""}, "quote": {"text": "\"The consumer is not a moron; she is your wife.\"", "author": "David Ogilvy（奥美创始人）", "translation": "消费者不是傻子，她是你的妻子。"}};
+BRIEFINGS['2026.06.14'] = {
+  "date": "2026.06.14",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "FanDuel — Let There Be Goals / 让进球降临",
+      "brand": "Sports Betting·体育博彩",
+      "agency": "Arts & Letters Creative Co.",
+      "goal": "借2026世界杯热点，将FanDuel从泛体育博彩平台强化为\"足球进球投注\"首选品牌。",
+      "problem": "世界杯期间博彩品牌扎堆营销，FanDuel需要一个独特的情感锚点，与\"看球下注\"产生强绑定。",
+      "insight": "足球比赛最极致的快感瞬间=进球。投注不应是冰冷的数字游戏，而是让每一个进球都变得更令人心跳加速。",
+      "task": "让\"Let There Be Goals\"成为球迷观赛时的本能联想，将投注体验与进球的肾上腺素直接挂钩。",
+      "idea": "首发TVC\"Norway\"以哈兰德家乡为背景，30秒浓缩进球狂欢的纯粹快感；全美及主办城市同步投放电影、社媒、数字户外，配合FanDuel进球专属奖励机制。",
+      "link": "https://adsoftheworld.com/campaigns/let-there-be-goals"
+    },
+    {
+      "num": 2,
+      "title": "PNC Bank — Boring Over Time / 无聊穿越时空",
+      "brand": "Banking·金融服务",
+      "agency": "Arnold",
+      "goal": "在金融科技新锐品牌涌现的时代，巩固PNC\"稳健可靠\"的老牌银行形象，防止年轻客群流失。",
+      "problem": "新兴金融App以炫酷体验抢夺用户，传统银行给人\"老旧迟缓\"印象，PNC如何把\"保守\"转化为竞争优势。",
+      "insight": "金融消费不是追风口——追逐NFT、投机热潮的代价往往惨重。真正聪明的理财，是穿越周期的\"无聊式\"纪律。",
+      "task": "将\"Brilliantly Boring\"品牌主张延续升级，用幽默历史叙事让\"稳\"变成一种酷。",
+      "idea": "演员Chris Diamantopoulos回归品牌代言，穿越庞贝末日、滑铁卢战役、NFT泡沫破裂等历史灾难时刻，以\"我早就说过\"的口吻类比PNC对客户的稳健建议。Craig Gillespie（《我，花样女王》导演）执导。",
+      "link": "https://www.campaignlive.com/article/ad-week-pnc-bank-boring-time-arnold/1961497"
+    },
+    {
+      "num": 3,
+      "title": "泡泡玛特 × FIFA — 先一步闯入世界杯",
+      "brand": "潮玩·IP授权/体育营销",
+      "agency": "内部团队/FIFA官方合作",
+      "goal": "借世界杯全球流量将泡泡玛特IP推向国际主流视野，实现从\"亚洲潮玩品牌\"到\"全球文化符号\"的跃迁。",
+      "problem": "潮玩IP如何突破亚文化圈层，进入体育这一全球最普世的叙事场域，而不显违和。",
+      "insight": "世界杯开幕式本身就是\"IP秀场\"——与其花钱打广告，不如直接让IP成为赛事内容的一部分，嵌入全球转播信号。",
+      "task": "让LABUBU成为世界杯记忆的一部分，让全球观众在赛事语境中第一次认识泡泡玛特。",
+      "idea": "LABUBU人偶登台世界杯开幕式与大力神杯同框，成为首个现身世界杯的潮玩IP；客串官方单曲《GOALS》MV获3个特写（与Lisa、Anitta同框）；同步推出THE MONSTERS×FIFA联名系列（毛绒公仔、挂绳等，59-599元）。",
+      "link": "https://www.digitaling.com/projects/369628.html"
+    },
+    {
+      "num": 1,
+      "title": "Advil — No Pain, More Gain / 没有疼痛，更多收获",
+      "brand": "医药·止痛药",
+      "agency": "Haleon",
+      "goal": "借2026世界杯节点强化Advil运动止痛定位，建立与新一代运动员的情感连接。",
+      "problem": "\"no pain no gain\"深植全球体育文化，运动员被鼓励忍痛前行，导致伤病恶化与长期健康隐患。",
+      "insight": "真正的力量不在逞强忍痛——学会倾听身体信号、主动恢复，本身就是一种更高级的运动智慧。",
+      "task": "重新定义运动疼痛话语，让\"no pain, more gain\"取代旧信条，成为Z世代运动员的行为准则。",
+      "idea": "前美国国脚Jozy Altidore以亲身伤病经历发声，纽约快闪球场+户外大牌+达人内容矩阵，将止痛与自我关怀绑定为新的运动态度。",
+      "link": "https://www.campaignlive.com/article/advil-former-usmnt-star-jozy-altidore-revise-no-pain-no-gain-adage/1961446"
+    },
+    {
+      "num": 2,
+      "title": "Jägermeister Orange — Surprise / 惊喜",
+      "brand": "烈酒·利口酒",
+      "agency": "The Midnight Club",
+      "goal": "推广新品Jägermeister Orange，在派对利口酒红海中建立独特口味心智。",
+      "problem": "派对场景刺激物过载——闪光灯、音乐、人群、社交——新口味极易沦为背景噪音，无法被消费者真正记住。",
+      "insight": "派对中最让人意外的不是任何视觉奇观，而是第一口酒的味觉冲击——最好的广告，藏在瓶子里。",
+      "task": "以超现实幽默三部曲，让\"Jägermeister Orange = 派对最大惊喜\"成为全球社交共识。",
+      "idea": "三支短片以荒诞反转为核心——生日派对发现人鱼、冰冻螃蟹复活大闹聚会、第一口酒让时间凝滞——所有离谱事件发生，众人仍只为酒的味道震惊。",
+      "link": "https://www.campaignlive.com/article/chalamet-messi-best-star-studded-2026-fifa-world-cup-ads-far/1961380"
+    },
+    {
+      "num": 3,
+      "title": "王老吉 × 哈兰德 — 满脑子都是哈兰德哈哈哈哈王老吉",
+      "brand": "凉茶饮料·体育营销",
+      "agency": "SG胜加",
+      "goal": "世界杯赛季抢占看球场景，让王老吉成为看球标配饮品。",
+      "problem": "夏天球星广告泛滥，如何让外国球星与中式凉茶产生独特记忆点。",
+      "insight": "\"哈\"字天然串联哈兰德名字、夏天喘气、辣味嘶哈、看球欢呼与喝王老吉的爽感。",
+      "task": "用\"哈兰德，哈王老吉\"打造洗脑记忆，让消费者看球即想喝王老吉。",
+      "idea": "借《哈兰德之歌》旋律改编魔性TVC，哈兰德真人飞赴曼城拍摄，中文首秀反复强化\"哈～王老吉\"品牌联想，女友惊喜客串，制造破圈话题。",
+      "link": "https://www.digitaling.com/projects/369383.html"
+    }
+  ],
+  "classic": {
+    "title": "Apple — 1984（1984）",
+    "brand": "科技·超级碗电视广告",
+    "agency": "Chiat/Day",
+    "goal": "在IBM垄断的个人电脑市场，为全新产品Macintosh创造史无前例的关注与期待。",
+    "problem": "IBM统治的PC世界令人窒息，Macintosh是完全陌生的品牌，仅一个60秒的机会向全美证明自己存在的意义。",
+    "insight": "Macintosh不只是一台电脑——它是打破垄断的武器，是个人创造力的解放。最好的产品发布不是罗列参数，而是宣告一种信仰。",
+    "task": "用一部迷你电影，在超级碗这个最大舞台上一次性引爆全国，让全美在1月24日排队等待Macintosh。",
+    "idea": "Ridley Scott执导，以《1984》为蓝本：灰蓝色调的极权世界中，一名女运动员狂奔挥锤，砸碎屏幕上训话的\"老大哥\"——宣告\"1月24日，Apple将推出Macintosh，你将看到1984不会成为'1984'\"。耗资90万美元，仅正式播出一次，被誉为史上最伟大的广告。",
+    "link": ""
+  },
+  "quote": {
+    "text": "\"The rules are what the artist breaks. The memorable never emerged from a formula.\"",
+    "author": "Bill Bernbach（DDB创始人）",
+    "translation": "规则是艺术家用来打破的。令人难忘的东西从来不是从公式中产生的。"
+  }
+};
 
-BRIEFINGS['2026.06.12'] = {"date": "2026.06.12", "fresh": [{"num": 1, "title": "The Trevor Project México — When No One Is There, We Are", "brand": "品牌/行业：非营利 · 心理健康", "agency": "", "goal": "提升墨西哥LGBTQ+青年对危机热线与自杀预防服务的认知和使用率。", "problem": "当家庭排斥与社会歧视叠加，LGBTQ+青年常陷入孤立无援的绝望境地。", "insight": "当所有人都转身离去时，一通电话、一条信息，就能挽救一个年轻生命。", "task": "让每一个感到被遗弃的LGBTQ+青年知道——我们永远在这里，你从不孤单。", "idea": "以真实求助故事为蓝本，用极简黑白镜头记录深夜热线另一端的声音与回应，传递温暖。", "link": "https://www.adsoftheworld.com/campaigns/when-no-one-is-there-we-are"}, {"num": 2, "title": "Adidas — Backyard Legends", "brand": "品牌/行业：Adidas · 运动服饰", "agency": "", "goal": "借2026世界杯强化Adidas足球基因，巩固其足球文化正统地位。", "problem": "Nike以68亿播放量级「Rip the Script」强势入局，Adidas需守住足球话语权。", "insight": "真正的足球信仰不在聚光灯下，而在街头——没有压力，只有本能的热爱。", "task": "唤醒全球球迷心中那份「最初的热爱」，将Adidas定位为足球文化的原点与归宿。", "idea": "Timothée Chalamet化身叙事者，讲述三位街头少年跨越1990–2000年代的足球传奇，贝克汉姆、齐达内等传奇亮相。", "link": "https://www.marketingdive.com/news/nike-adidas-take-rivalry-to-world-cup-who-will-win/822288/"}, {"num": 3, "title": "美团外卖 — 咖啡解困，鲁迅解困惑", "brand": "品牌/行业：美团外卖 · 互联网/O2O", "agency": "", "goal": "在上海国际咖啡文化节期间，提升美团外卖咖啡品类订单量与品牌温度感知。", "problem": "各平台咖啡促销同质化严重，如何让年轻用户主动关注和参与？", "insight": "年轻人喝咖啡不只解困，更渴望有人能解开生活的困惑与焦虑。", "task": "让鲁迅「重生」为打工人灵魂对话者，打造一场跨越90年的清醒交流。", "idea": "基于鲁迅旧照AI复原形象，在上海公啡咖啡馆等历史地标设互动大屏，鲁迅以一对一问答回应职场倦怠、人际关系等当代青年痛点。", "link": "https://www.digitaling.com/projects/368038.html"}], "classic": {"title": "Volvo Trucks — The Epic Split", "brand": "品牌/行业：Volvo Trucks · 商用车", "agency": "", "goal": "推广Volvo FM系列动态转向系统，建立「精密工程」品牌认知。", "problem": "卡车广告天然枯燥，如何让一项B2B技术创新成为全球文化事件？", "insight": "真正的产品实力不需要解释——用极致视觉震撼让观众自己得出结论。", "task": "用一场令人屏息的表演，让全世界记住Volvo动态转向的精准与稳定。", "idea": "动作巨星尚格·云顿在两辆倒行Volvo卡车之间完成史诗级「一字马」，配以恩雅空灵背景乐，全程实拍无特效，上线一周破亿播放。", "link": "https://www.youtube.com/watch?v=M7FIvfx5J10"}, "quote": {"text": "\"The best ideas come as jokes. Make your thinking as funny as possible.\"", "author": "David Ogilvy（大卫·奥格威）", "translation": "最好的创意往往来自玩笑。让你的思考尽可能有趣。"}};
+BRIEFINGS['2026.06.13'] = {
+  "date": "2026.06.13",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "NIKE — Script Nothing / 让剧本都作废",
+      "brand": "运动·体育用品",
+      "agency": "Wieden+Kennedy",
+      "goal": "借2026世界杯强化Nike足球市场领导地位，激发年轻球员对品牌的情感认同。",
+      "problem": "现代足球被过度战术化，年轻球员丧失本能与创造力，比赛逐渐失去观赏性。",
+      "insight": "真正足球魅力不在刻板剧本中——当球员遵从内心本能，运动方能绽放极致魅力。",
+      "task": "以史诗级影片号召全球年轻球员跳出战术框架，拥抱本能驱动的足球之美。",
+      "idea": "6分钟片在好莱坞影棚拍摄，姆巴佩、C罗、哈兰德等巨星与坎通纳、小罗等传奇跳出\"剧本\"即兴表演，金·卡戴珊、LISA等跨界客串。",
+      "link": "https://www.adsoftheworld.com/campaigns/rip-the-script"
+    },
+    {
+      "num": 2,
+      "title": "Uber Eats — Who Could Cook At a Time Like This?",
+      "brand": "外卖·食品配送",
+      "agency": "待确认",
+      "goal": "借世界杯观赛场景强化Uber Eats\"看球不做饭\"联想，提升赛事期间订单量。",
+      "problem": "世界杯期间，消费者既想专注看球又需解决吃饭问题，烹饪与观赛形成冲突。",
+      "insight": "在重要比赛时刻，没人应该被困厨房——食物应被送达，而不是被烹饪。",
+      "task": "通过名人幽默演绎，让\"比赛日=Uber Eats日\"成为全球球迷的肌肉记忆。",
+      "idea": "名厨Gordon Ramsay闯入球迷家中，举起外卖袋质问\"这种时候谁还做饭？\"，将地狱厨房犀利风格转为品牌幽默。",
+      "link": "https://www.campaignlive.com/article/gordon-ramsay-crashes-kitchens-new-uber-eats-world-cup-campaign/1961146"
+    },
+    {
+      "num": 3,
+      "title": "美团外卖 — 邀请你来和鲁迅先生Coffee Chat一下",
+      "brand": "外卖·生活服务",
+      "agency": "The N3 Agency 上海",
+      "goal": "借上海咖啡文化节强化美团咖啡品类心智，提升站内咖啡订单与用户粘性。",
+      "problem": "咖啡赛道竞争激烈，需在功能卖点之外找到差异化的文化情感连接点。",
+      "insight": "年轻人喝咖啡两大需求——解困与清醒；鲁迅是能同时给予\"双重清醒\"的文化符号。",
+      "task": "融合AI技术+历史名人IP，打造文化事件，让\"外卖咖啡\"成为年轻人情绪出口。",
+      "idea": "用AI重现鲁迅形象，线下咖啡馆设互动屏让鲁迅问答职场倦怠、人际关系等当代困惑，推\"早\"字杯垫、\"一字胡\"吸管挂件等文创周边。",
+      "link": "https://www.digitaling.com/projects/368038.html"
+    }
+  ],
+  "classic": {
+    "title": "Apple — 1984 (1984)",
+    "brand": "科技·个人电脑",
+    "agency": "Chiat/Day",
+    "goal": "为Macintosh上市制造轰动，在超级碗宣告苹果到来，打破IBM市场垄断。",
+    "problem": "IBM垄断PC市场，消费者面对的是由蓝色巨人主导的同质化计算世界。",
+    "insight": "人们渴望自由与个性，技术不应是冰冷控制工具而是解放个体创造力的武器。",
+    "task": "一支不展示产品但让人永生难忘的超级碗广告，创造话题引爆全国讨论。",
+    "idea": "Ridley Scott执导，以《1984》为隐喻，女运动员掷铁锤砸碎老大哥屏幕，象征Macintosh将打破IBM垄断。仅播出一次便成传奇。",
+    "link": ""
+  },
+  "quote": {
+    "text": "\"The consumer is not a moron; she is your wife.\"",
+    "author": "David Ogilvy（奥美创始人）",
+    "translation": "消费者不是傻子，她是你的妻子。"
+  }
+};
 
-BRIEFINGS['2026.06.11'] = {"date": "2026.06.11", "fresh": [{"num": 1, "title": "Nike — Script Nothing / 让剧本都作废", "brand": "运动品牌 · 体育营销 · Wieden+Kennedy", "agency": "", "goal": "在2026世界杯前巩固Nike足球霸主地位，号召年轻球员释放创造力。", "problem": "现代足球战术日益刻板，球员沦为\"剧本\"执行者，失去本能表达。", "insight": "勇气胜过陈规，本能胜过指令——当球员遵从内心，足球方绽极致魅力。", "task": "集结足坛巨星拍摄6分钟大片，传递\"创造力凌驾一切\"的品牌精神。", "idea": "好莱坞影棚中，姆巴佩、C罗、哈兰德甩开\"剧本\"随性炫技；坎通纳、小罗等传奇与詹姆斯、LISA等名人客串，诠释足球超越赛场的影响力。", "link": "https://www.adsoftheworld.com/campaigns/nike-script-nothing-fifa-world-cup-2026"}, {"num": 2, "title": "Uber Eats — Who Could Cook At a Time Like This?", "brand": "外卖平台 · 体育营销 · Mother", "agency": "", "goal": "世界杯期间驱动全球订单增长，将外卖与看球场景深度绑定。", "problem": "消费者看球时习惯下厨做饭，容易错过比赛的精彩瞬间。", "insight": "看球和做饭天然矛盾——\"这个时候谁还在做饭？\"制造幽默冲突。", "task": "传递\"Uber Eats让你不错过任何一秒\"的便利价值，覆盖全球17个市场。", "idea": "Gordon Ramsay闯入球迷厨房，手举Uber Eats外卖袋质问\"谁会在这时候做饭？！\"以标志性暴脾气制造喜剧效果，在各国本地化落地。", "link": "https://www.campaignlive.com/article/gordon-ramsay-crashes-kitchens-new-uber-eats-world-cup-campaign/1961146"}, {"num": 3, "title": "王老吉 × 哈兰德 — 满脑子都是哈兰德哈哈哈哈王老吉", "brand": "凉茶饮料 · 体育营销 · SG胜加", "agency": "", "goal": "在世界杯赛季抢占看球场景，让王老吉成为看球标配饮品。", "problem": "夏天球星广告泛滥，如何让外国球星与中式凉茶产生独特记忆点。", "insight": "\"哈\"字天然串联哈兰德名字、夏天喘气、辣味嘶哈、看球欢呼与喝王老吉的爽感。", "task": "用\"哈兰德，哈王老吉\"打造洗脑记忆，让消费者看球即想喝王老吉。", "idea": "借《哈兰德之歌》旋律改编魔性TVC，哈兰德真人飞赴曼城拍摄，中文首秀反复强化\"哈～王老吉\"品牌联想，女友惊喜客串，制造破圈话题。", "link": "https://www.digitaling.com/projects/369383.html"}], "classic": {"title": "Volkswagen — Think Small（1959）", "brand": "汽车 · 平面广告 · DDB", "agency": "", "goal": "在崇尚\"更大更好\"的美国市场，成功销售小而丑的甲壳虫汽车。", "problem": "消费主义盛行，美国人偏爱大型豪华车，甲壳虫完全违背主流审美。", "insight": "诚实比浮夸更有力量——坦然承认\"小\"，反而成为令人耳目一新的独特卖点。", "task": "用反直觉的极简诚实文案，让消费者重新审视\"小\"的价值。", "idea": "大面积留白版面中央放一辆小小甲壳虫，标题\"Think Small\"，正文以自嘲口吻列举小的好处（省油、好停车），颠覆当时浮夸广告范式，开创创意革命时代。", "link": ""}, "quote": {"text": "\"The consumer isn't a moron. She is your wife.\"", "author": "David Ogilvy（大卫·奥格威）, Ogilvy & Mather创始人", "translation": "消费者不是傻子，她是你的妻子。"}};
+BRIEFINGS['2026.06.12'] = {
+  "date": "2026.06.12",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "The Trevor Project México — When No One Is There, We Are",
+      "brand": "品牌/行业：非营利 · 心理健康",
+      "agency": "",
+      "goal": "提升墨西哥LGBTQ+青年对危机热线与自杀预防服务的认知和使用率。",
+      "problem": "当家庭排斥与社会歧视叠加，LGBTQ+青年常陷入孤立无援的绝望境地。",
+      "insight": "当所有人都转身离去时，一通电话、一条信息，就能挽救一个年轻生命。",
+      "task": "让每一个感到被遗弃的LGBTQ+青年知道——我们永远在这里，你从不孤单。",
+      "idea": "以真实求助故事为蓝本，用极简黑白镜头记录深夜热线另一端的声音与回应，传递温暖。",
+      "link": "https://www.adsoftheworld.com/campaigns/when-no-one-is-there-we-are"
+    },
+    {
+      "num": 2,
+      "title": "Adidas — Backyard Legends",
+      "brand": "品牌/行业：Adidas · 运动服饰",
+      "agency": "",
+      "goal": "借2026世界杯强化Adidas足球基因，巩固其足球文化正统地位。",
+      "problem": "Nike以68亿播放量级「Rip the Script」强势入局，Adidas需守住足球话语权。",
+      "insight": "真正的足球信仰不在聚光灯下，而在街头——没有压力，只有本能的热爱。",
+      "task": "唤醒全球球迷心中那份「最初的热爱」，将Adidas定位为足球文化的原点与归宿。",
+      "idea": "Timothée Chalamet化身叙事者，讲述三位街头少年跨越1990–2000年代的足球传奇，贝克汉姆、齐达内等传奇亮相。",
+      "link": "https://www.marketingdive.com/news/nike-adidas-take-rivalry-to-world-cup-who-will-win/822288/"
+    },
+    {
+      "num": 3,
+      "title": "美团外卖 — 咖啡解困，鲁迅解困惑",
+      "brand": "品牌/行业：美团外卖 · 互联网/O2O",
+      "agency": "",
+      "goal": "在上海国际咖啡文化节期间，提升美团外卖咖啡品类订单量与品牌温度感知。",
+      "problem": "各平台咖啡促销同质化严重，如何让年轻用户主动关注和参与？",
+      "insight": "年轻人喝咖啡不只解困，更渴望有人能解开生活的困惑与焦虑。",
+      "task": "让鲁迅「重生」为打工人灵魂对话者，打造一场跨越90年的清醒交流。",
+      "idea": "基于鲁迅旧照AI复原形象，在上海公啡咖啡馆等历史地标设互动大屏，鲁迅以一对一问答回应职场倦怠、人际关系等当代青年痛点。",
+      "link": "https://www.digitaling.com/projects/368038.html"
+    }
+  ],
+  "classic": {
+    "title": "Volvo Trucks — The Epic Split",
+    "brand": "",
+    "agency": "",
+    "goal": "推广Volvo FM系列动态转向系统，建立「精密工程」品牌认知。",
+    "problem": "卡车广告天然枯燥，如何让一项B2B技术创新成为全球文化事件？",
+    "insight": "真正的产品实力不需要解释——用极致视觉震撼让观众自己得出结论。",
+    "task": "用一场令人屏息的表演，让全世界记住Volvo动态转向的精准与稳定。",
+    "idea": "动作巨星尚格·云顿在两辆倒行Volvo卡车之间完成史诗级「一字马」，配以恩雅空灵背景乐，全程实拍无特效，上线一周破亿播放。",
+    "link": "https://www.youtube.com/watch?v=M7FIvfx5J10"
+  },
+  "quote": {
+    "text": "\"The best ideas come as jokes. Make your thinking as funny as possible.\"",
+    "author": "David Ogilvy（大卫·奥格威）",
+    "translation": "最好的创意往往来自玩笑。让你的思考尽可能有趣。"
+  }
+};
 
-BRIEFINGS['2026.06.10'] = {"date": "2026.06.10", "fresh": [{"num": 1, "title": "Lego — The Play Maker", "brand": "Lego · 玩具 · Our LEGO Agency (OLA)", "agency": "", "goal": "推广「永不停止玩乐」品牌理念，以Jason Momoa号召全球家庭重拾共同玩乐的快乐与力量。", "problem": "全球44%家庭玩乐时间不足，数字设备侵占亲子互动，如何让家长意识到玩乐不是浪费而是刚需？", "insight": "每周仅5小时家庭玩乐即可显著提升幸福感——比刷手机时间还少，玩乐是最低成本的幸福投资。", "task": "以Momoa明星效应打破「玩=幼稚」偏见，弥合44%家庭的「玩乐鸿沟」，让玩乐成为现代家庭的新仪式。", "idea": "Momoa化身「玩乐大师」拍PSA式短片，核心符号为两块积木的「咔嗒」声——简单动作即打开创意与连接之门。", "link": "https://www.adsoftheworld.com/campaigns/the-play-maker"}, {"num": 2, "title": "Uber Eats — Gordon Ramsay Stops You From Cooking", "brand": "Uber Eats · 外卖配送 · Mother", "agency": "", "goal": "推出首个全球外卖campaign，借世界杯在17个市场建立「看球不煮饭，叫Uber Eats」的品牌习惯。", "problem": "世界杯期间没人想错过一秒比赛，但吃饭是刚需——品牌如何嵌入「看球与做饭不可兼得」的消费场景？", "insight": "当比赛开始没人想进厨房——让世界最知名厨师本人告诉你「别做饭」，是荒诞又完美的行为反转。", "task": "以Gordon Ramsay暴脾气人设制造反差喜剧，让「世界杯叫外卖」成为全球球迷的本能选择。", "idea": "Ramsay拎Uber Eats绿色袋闯入厨房，标志性咆哮驱赶人们放下锅铲——世界最著名厨师在阻止烹饪，荒诞引爆病毒传播。", "link": "https://www.adweek.com/creativity/gordon-ramsay-wants-fans-to-order-uber-eats-not-cook-during-the-world-cup/"}, {"num": 3, "title": "武夷山国家公园 — 武夷山，啥都能删", "brand": "武夷山国家公园 · 文旅 · IDEAinside 艾迪因赛", "agency": "", "goal": "打造年轻化文旅宣传片，吸引都市打工人前往武夷山「删除焦虑」，驱动五一出行决策。", "problem": "传统文旅片说教味重与年轻人距离远，如何让「去武夷山」成为主动向往而非被动接收的广告信息？", "insight": "打工人最想「删除」的是一切疲惫——武夷山94.5%植被覆盖率就是最强的「绿色充电宝」。", "task": "以「魔戒能删万物但需绿色能量」的超现实设定，把武夷山植入年轻人日常语境，降低出行决策门槛。", "idea": "打工人捡到「啥都能删」魔戒，删掉咖啡渍会议方案后系统提示「绿色值不足」——答案指向武夷山。线下设「喊删」装置互动。", "link": "https://www.digitaling.com/projects/367646.html"}], "classic": {"title": "Old Spice — The Man Your Man Could Smell Like（2010）", "brand": "Old Spice · 男士护理 · Wieden+Kennedy", "agency": "", "goal": "扭转品牌老化危机，让被视为「爷爷辈」的Old Spice重新赢得年轻男性消费者。", "problem": "Old Spice=过时代名词，且男性沐浴露购买决策常由女性伴侣主导——如何一击同时触达两群受众？", "insight": "男士护理的真正购买决策者常是伴侣——「你的男人该闻起来像……」比直接对男性说教奏效百倍。", "task": "以一支颠覆性别营销规则的超级碗广告，让Old Spice从「你爸用的」变成全网模仿的文化现象。", "idea": "Isaiah Mustafa半裸出镜，在浴室、帆船、马背间无缝切换，磁性低语「看看你的男人，再看看我」。24小时极速拍摄引爆社交。", "link": "https://en.wikipedia.org/wiki/The_Man_Your_Man_Could_Smell_Like"}, "quote": null};
+BRIEFINGS['2026.06.11'] = {
+  "date": "2026.06.11",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "Nike — Script Nothing / 让剧本都作废",
+      "brand": "运动品牌·体育营销",
+      "agency": "Wieden+Kennedy",
+      "goal": "在2026世界杯前巩固Nike足球霸主地位，号召年轻球员释放创造力。",
+      "problem": "现代足球战术日益刻板，球员沦为\"剧本\"执行者，失去本能表达。",
+      "insight": "勇气胜过陈规，本能胜过指令——当球员遵从内心，足球方绽极致魅力。",
+      "task": "集结足坛巨星拍摄6分钟大片，传递\"创造力凌驾一切\"的品牌精神。",
+      "idea": "好莱坞影棚中，姆巴佩、C罗、哈兰德甩开\"剧本\"随性炫技；坎通纳、小罗等传奇与詹姆斯、LISA等名人客串，诠释足球超越赛场的影响力。",
+      "link": "https://www.adsoftheworld.com/campaigns/nike-script-nothing-fifa-world-cup-2026"
+    },
+    {
+      "num": 2,
+      "title": "Uber Eats — Who Could Cook At a Time Like This?",
+      "brand": "外卖平台·体育营销",
+      "agency": "Mother",
+      "goal": "世界杯期间驱动全球订单增长，将外卖与看球场景深度绑定。",
+      "problem": "消费者看球时习惯下厨做饭，容易错过比赛的精彩瞬间。",
+      "insight": "看球和做饭天然矛盾——\"这个时候谁还在做饭？\"制造幽默冲突。",
+      "task": "传递\"Uber Eats让你不错过任何一秒\"的便利价值，覆盖全球17个市场。",
+      "idea": "Gordon Ramsay闯入球迷厨房，手举Uber Eats外卖袋质问\"谁会在这时候做饭？！\"以标志性暴脾气制造喜剧效果，在各国本地化落地。",
+      "link": "https://www.campaignlive.com/article/gordon-ramsay-crashes-kitchens-new-uber-eats-world-cup-campaign/1961146"
+    },
+    {
+      "num": 3,
+      "title": "王老吉 × 哈兰德 — 满脑子都是哈兰德哈哈哈哈王老吉",
+      "brand": "凉茶饮料·体育营销",
+      "agency": "SG胜加",
+      "goal": "在世界杯赛季抢占看球场景，让王老吉成为看球标配饮品。",
+      "problem": "夏天球星广告泛滥，如何让外国球星与中式凉茶产生独特记忆点。",
+      "insight": "\"哈\"字天然串联哈兰德名字、夏天喘气、辣味嘶哈、看球欢呼与喝王老吉的爽感。",
+      "task": "用\"哈兰德，哈王老吉\"打造洗脑记忆，让消费者看球即想喝王老吉。",
+      "idea": "借《哈兰德之歌》旋律改编魔性TVC，哈兰德真人飞赴曼城拍摄，中文首秀反复强化\"哈～王老吉\"品牌联想，女友惊喜客串，制造破圈话题。",
+      "link": "https://www.digitaling.com/projects/369383.html"
+    }
+  ],
+  "classic": {
+    "title": "Volkswagen — Think Small（1959）",
+    "brand": "汽车·平面广告",
+    "agency": "DDB",
+    "goal": "在崇尚\"更大更好\"的美国市场，成功销售小而丑的甲壳虫汽车。",
+    "problem": "消费主义盛行，美国人偏爱大型豪华车，甲壳虫完全违背主流审美。",
+    "insight": "诚实比浮夸更有力量——坦然承认\"小\"，反而成为令人耳目一新的独特卖点。",
+    "task": "用反直觉的极简诚实文案，让消费者重新审视\"小\"的价值。",
+    "idea": "大面积留白版面中央放一辆小小甲壳虫，标题\"Think Small\"，正文以自嘲口吻列举小的好处（省油、好停车），颠覆当时浮夸广告范式，开创创意革命时代。",
+    "link": ""
+  },
+  "quote": {
+    "text": "\"The consumer isn't a moron. She is your wife.\"",
+    "author": "David Ogilvy（大卫·奥格威）, Ogilvy & Mather创始人",
+    "translation": "消费者不是傻子，她是你的妻子。"
+  }
+};
 
-BRIEFINGS['2026.06.09'] = {"date": "2026.06.09", "fresh": [{"num": 1, "title": "Raylo — Something Better Always Comes Along", "brand": "Raylo · 电子设备订阅 · Stink Studios", "agency": "", "goal": "为Raylo电子订阅推出新TV campaign，驱动品牌认知与订阅用户增长。", "problem": "消费者习惯持有过时设备，如何让升级换代显得有吸引力而非浪费？", "insight": "与旧科技\"分手\"的情感体验酷似结束恋情——人们留着不是因为好用，是因为习惯。", "task": "用分手隐喻打破电子品\"耐用品\"认知，让升级成为一场情绪解放。", "idea": "一对情侣在咖啡馆分手，女方控诉男方\"过时、记性差、续航短\"——观众最后发现她吐槽的是旧手机。", "link": "https://www.adsoftheworld.com/campaigns/something-better-always-comes-along"}, {"num": 2, "title": "Nike — Rip the Script", "brand": "Nike · 运动 · Wieden+Kennedy", "agency": "", "goal": "借2026世界杯重振Nike品牌势能，以内容生态替代传统广告投放逻辑。", "problem": "世界杯营销内卷严重，如何让campaign超越广告，成为持续12周的文化事件？", "insight": "足球的魅力来自本能与不可预测——最好的营销不是按剧本走，是放手让创造力发生。", "task": "以6分钟短片为锚点，打造12周跨平台内容宇宙，覆盖铁杆球迷与足球新人。", "idea": "30+巨星在好莱坞片场推翻导演剧本接管拍摄，用TikTok式快剪与彩蛋传达\"足球不需要剧本\"。", "link": "https://www.campaignlive.com/article/nike-rips-script-writes-new-chapter-epic-2026-world-cup-campaign/1960540"}, {"num": 3, "title": "食族人 × 宋雨琦 — 辣出自我 呔破规则", "brand": "食族人 · 快消速食 · 赞意", "agency": "", "goal": "品牌主张从\"不爽就嗦\"升级至\"做自己\"，完成代言人从王琳凯到宋雨琦的无缝切换。", "problem": "如何让代言人更换不止是流量置换，而是品牌精神的递进与深化？", "insight": "当下年轻人最大的\"不爽\"不是外部挫折，而是不确定时代里很难真正\"做自己\"。", "task": "把宋雨琦\"练习生到舞台中央\"的真实故事融入品牌，让口号变成可感知的生活态度。", "idea": "一周半极速交付，以宋雨琦成长经历为脚本，用\"辣出自我\"诠释她对世界最锋利的回答。", "link": "https://m.adquan.com/creative/detail/360971"}], "classic": {"title": "Dove — Real Beauty Sketches（真实美丽素描，2013）", "brand": "Dove/多芬 · 个人护理 · Ogilvy", "agency": "", "goal": "延续\"真实美丽\"品牌主张，在全球引发关于女性自我认知的社会对话。", "problem": "仅2%女性认为自己是美的，广告模特与真实女性之间的巨大鸿沟如何弥合？", "insight": "女性对自己的评价远比他人眼中的她们更苛刻——\"你比你以为的更美\"。", "task": "用一个可参与的社会实验让全球女性重新审视自我认知，输出品牌价值观。", "idea": "请FBI素描师根据女性自述和他人描述分别画像——他人描述的画像总是更美，引发全球热议。", "link": "https://www.digitaling.com/articles/936081.html"}, "quote": null};
+BRIEFINGS['2026.06.10'] = {
+  "date": "2026.06.10",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "Lego — The Play Maker",
+      "brand": "Lego·玩具",
+      "agency": "Our LEGO Agency (OLA)",
+      "goal": "推广「永不停止玩乐」品牌理念，以Jason Momoa号召全球家庭重拾共同玩乐的快乐与力量。",
+      "problem": "全球44%家庭玩乐时间不足，数字设备侵占亲子互动，如何让家长意识到玩乐不是浪费而是刚需？",
+      "insight": "每周仅5小时家庭玩乐即可显著提升幸福感——比刷手机时间还少，玩乐是最低成本的幸福投资。",
+      "task": "以Momoa明星效应打破「玩=幼稚」偏见，弥合44%家庭的「玩乐鸿沟」，让玩乐成为现代家庭的新仪式。",
+      "idea": "Momoa化身「玩乐大师」拍PSA式短片，核心符号为两块积木的「咔嗒」声——简单动作即打开创意与连接之门。",
+      "link": "https://www.adsoftheworld.com/campaigns/the-play-maker"
+    },
+    {
+      "num": 2,
+      "title": "Uber Eats — Gordon Ramsay Stops You From Cooking",
+      "brand": "Uber Eats·外卖配送",
+      "agency": "Mother",
+      "goal": "推出首个全球外卖campaign，借世界杯在17个市场建立「看球不煮饭，叫Uber Eats」的品牌习惯。",
+      "problem": "世界杯期间没人想错过一秒比赛，但吃饭是刚需——品牌如何嵌入「看球与做饭不可兼得」的消费场景？",
+      "insight": "当比赛开始没人想进厨房——让世界最知名厨师本人告诉你「别做饭」，是荒诞又完美的行为反转。",
+      "task": "以Gordon Ramsay暴脾气人设制造反差喜剧，让「世界杯叫外卖」成为全球球迷的本能选择。",
+      "idea": "Ramsay拎Uber Eats绿色袋闯入厨房，标志性咆哮驱赶人们放下锅铲——世界最著名厨师在阻止烹饪，荒诞引爆病毒传播。",
+      "link": "https://www.adweek.com/creativity/gordon-ramsay-wants-fans-to-order-uber-eats-not-cook-during-the-world-cup/"
+    },
+    {
+      "num": 3,
+      "title": "武夷山国家公园 — 武夷山，啥都能删",
+      "brand": "武夷山国家公园·文旅",
+      "agency": "IDEAinside 艾迪因赛",
+      "goal": "打造年轻化文旅宣传片，吸引都市打工人前往武夷山「删除焦虑」，驱动五一出行决策。",
+      "problem": "传统文旅片说教味重与年轻人距离远，如何让「去武夷山」成为主动向往而非被动接收的广告信息？",
+      "insight": "打工人最想「删除」的是一切疲惫——武夷山94.5%植被覆盖率就是最强的「绿色充电宝」。",
+      "task": "以「魔戒能删万物但需绿色能量」的超现实设定，把武夷山植入年轻人日常语境，降低出行决策门槛。",
+      "idea": "打工人捡到「啥都能删」魔戒，删掉咖啡渍会议方案后系统提示「绿色值不足」——答案指向武夷山。线下设「喊删」装置互动。",
+      "link": "https://www.digitaling.com/projects/367646.html"
+    }
+  ],
+  "classic": {
+    "title": "Old Spice — The Man Your Man Could Smell Like（2010）",
+    "brand": "Old Spice·男士护理",
+    "agency": "Wieden+Kennedy",
+    "goal": "扭转品牌老化危机，让被视为「爷爷辈」的Old Spice重新赢得年轻男性消费者。",
+    "problem": "Old Spice=过时代名词，且男性沐浴露购买决策常由女性伴侣主导——如何一击同时触达两群受众？",
+    "insight": "男士护理的真正购买决策者常是伴侣——「你的男人该闻起来像……」比直接对男性说教奏效百倍。",
+    "task": "以一支颠覆性别营销规则的超级碗广告，让Old Spice从「你爸用的」变成全网模仿的文化现象。",
+    "idea": "Isaiah Mustafa半裸出镜，在浴室、帆船、马背间无缝切换，磁性低语「看看你的男人，再看看我」。24小时极速拍摄引爆社交。",
+    "link": "https://en.wikipedia.org/wiki/The_Man_Your_Man_Could_Smell_Like"
+  },
+  "quote": null
+};
 
-BRIEFINGS['2026.06.08'] = {"date": "2026.06.08", "fresh": [{"num": 1, "title": "Sound Transit — Your Connection is Out There", "brand": "Sound Transit · 公共交通 · Copacino Fujikado", "agency": "", "goal": "推广西雅图新轻轨Crosslake Connection开通，提升市民对新线路的认知与使用率，迎接FIFA世界杯客流。", "problem": "公共交通开通新闻枯燥难传播，如何让一条轻轨线路的工程成就变成全市热议话题？", "insight": "这条轻轨建在世界首座浮桥之上——工程难度逆天到连外星文明都会表示敬佩。", "task": "以幽默科幻叙事让市民用全新眼光看待日常通勤，在世界杯前提升公共交通好感与使用意愿。", "idea": "外星高管在办公室认真分析Sound Transit成就，一边震惊于人类工程能力一边自尊心受挫。户外、平面、社交全面铺开——连外星人都来取经了。", "link": "https://www.adsoftheworld.com/campaigns/your-connection-is-out-there"}, {"num": 2, "title": "Jeep × Marvel — The Original Superheroes", "brand": "Jeep × Marvel · 汽车 · Highdive / RSA Films", "agency": "", "goal": "借美国250周年国庆与Marvel IP联动，将Jeep从越野工具升级为\"美国精神\"文化符号。", "problem": "汽车爱国营销极易陷入说教与俗套，如何让硬派越野品牌在250周年叙事中既真诚又酷？", "insight": "真正的超级英雄不是漫画角色，而是曾驾驶Jeep奔赴前线的退伍军人——品牌拥有真实英雄故事可讲。", "task": "以一支电影级短片将Jeep全系车型塑造为个性角色，在250周年国庆语境中赢得文化认同。", "idea": "邀请真实退役\"Captain\"在加州干涸湖床驾驶Jeep全系完成高难度越野挑战，导演为每款车设定独特角色性格，用Marvel式视觉语言向真实英雄致敬。", "link": "https://www.shots.net/news/view/jeep-x-marvel-give-us-the-original-superheroes"}, {"num": 3, "title": "蕉内 — 体感科学十周年", "brand": "蕉内 · DTC内衣/家居服 · 蕉内", "agency": "", "goal": "在品牌十周年之际，将\"舒服\"从营销话术升级为可验证的科学体系，建立品类话语权。", "problem": "人人都在喊\"舒服\"，当这个词被用滥后，如何让消费者相信你的舒服是真的？", "insight": "舒服虽私人且转瞬即逝，却可拆解为温度、湿度、触感、压力、防护五大可量化维度。", "task": "联合中国纺织信息中心发布《体感科学报告》，以学术级严谨将主观感受转化为客观标准。", "idea": "联合中央芭蕾舞团拍摄十周年影片，舞者身体各部位由其他舞者共同组成——\"让身体组成身体\"，隐喻人人共享舒服的权利。", "link": "https://www.digitaling.com/projects/366505.html"}], "classic": {"title": "Apple — 1984（1984）", "brand": "Apple · 科技 · Chiat/Day", "agency": "", "goal": "在超级碗发布Macintosh，用一支广告让世界记住这个挑战IBM垄断的新品牌。", "problem": "个人电脑市场被IBM统治，无人知晓的新品牌如何在80秒内宣告一个时代来临？", "insight": "Macintosh不是另一台电脑——它是反抗思想控制、解放个体创造力的武器，科技具有政治隐喻。", "task": "创造史上最轰动的超级碗广告，让产品发布成为全球文化事件而非一场普通发布会。", "idea": "Ridley Scott以奥威尔《1984》为蓝本，女子挥锤砸碎老大哥屏幕，宣告\"1月24日Apple推出Macintosh，1984不会像《1984》\"。", "link": "https://en.wikipedia.org/wiki/1984_(advertisement)"}, "quote": null};
-
+BRIEFINGS['2026.06.09'] = {
+  "date": "2026.06.09",
+  "fresh": [
+    {
+      "num": 1,
+      "title": "Raylo — Something Better Always Comes Along",
+      "brand": "Raylo·电子设备订阅",
+      "agency": "Stink Studios",
+      "goal": "为Raylo电子订阅推出新TV campaign，驱动品牌认知与订阅用户增长。",
+      "problem": "消费者习惯持有过时设备，如何让升级换代显得有吸引力而非浪费？",
+      "insight": "与旧科技\"分手\"的情感体验酷似结束恋情——人们留着不是因为好用，是因为习惯。",
+      "task": "用分手隐喻打破电子品\"耐用品\"认知，让升级成为一场情绪解放。",
+      "idea": "一对情侣在咖啡馆分手，女方控诉男方\"过时、记性差、续航短\"——观众最后发现她吐槽的是旧手机。",
+      "link": "https://www.adsoftheworld.com/campaigns/something-better-always-comes-along"
+    },
+    {
+      "num": 2,
+      "title": "Nike — Rip the Script",
+      "brand": "Nike·运动",
+      "agency": "Wieden+Kennedy",
+      "goal": "借2026世界杯重振Nike品牌势能，以内容生态替代传统广告投放逻辑。",
+      "problem": "世界杯营销内卷严重，如何让campaign超越广告，成为持续12周的文化事件？",
+      "insight": "足球的魅力来自本能与不可预测——最好的营销不是按剧本走，是放手让创造力发生。",
+      "task": "以6分钟短片为锚点，打造12周跨平台内容宇宙，覆盖铁杆球迷与足球新人。",
+      "idea": "30+巨星在好莱坞片场推翻导演剧本接管拍摄，用TikTok式快剪与彩蛋传达\"足球不需要剧本\"。",
+      "link": "https://www.campaignlive.com/article/nike-rips-script-writes-new-chapter-epic-2026-world-cup-campaign/1960540"
+    },
+    {
+      "num": 3,
+      "title": "食族人 × 宋雨琦 — 辣出自我 呔破规则",
+      "brand": "食族人·快消速食",
+      "agency": "赞意",
+      "goal": "品牌主张从\"不爽就嗦\"升级至\"做自己\"，完成代言人从王琳凯到宋雨琦的无缝切换。",
+      "problem": "如何让代言人更换不止是流量置换，而是品牌精神的递进与深化？",
+      "insight": "当下年轻人最大的\"不爽\"不是外部挫折，而是不确定时代里很难真正\"做自己\"。",
+      "task": "把宋雨琦\"练习生到舞台中央\"的真实故事融入品牌，让口号变成可感知的生活态度。",
+      "idea": "一周半极速交付，以宋雨琦成长经历为脚本，用\"辣出自我\"诠释她对世界最锋利的回答。",
+      "link": "https://m.adquan.com/creative/detail/360971"
+    }
+  ],
+  "classic": {
+    "title": "Dove — Real Beauty Sketches（真实美丽素描，2013）",
+    "brand": "Dove/多芬·个人护理",
+    "agency": "Ogilvy",
+    "goal": "延续\"真实美丽\"品牌主张，在全球引发关于女性自我认知的社会对话。",
+    "problem": "仅2%女性认为自己是美的，广告模特与真实女性之间的巨大鸿沟如何弥合？",
+    "insight": "女性对自己的评价远比他人眼中的她们更苛刻——\"你比你以为的更美\"。",
+    "task": "用一个可参与的社会实验让全球女性重新审视自我认知，输出品牌价值观。",
+    "idea": "请FBI素描师根据女性自述和他人描述分别画像——他人描述的画像总是更美，引发全球热议。",
+    "link": "https://www.digitaling.com/articles/936081.html"
+  },
+  "quote": null
+};
 const dates = Object.keys(BRIEFINGS).sort().reverse();
 let currentIndex = 0;
 
