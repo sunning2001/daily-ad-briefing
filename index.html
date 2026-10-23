@@ -541,9 +541,9 @@ function renderDate(dateStr) {
   data.fresh.forEach(c => {
     html += '<div class="case-card"><div class="case-title"><span class="case-num">#' + c.num + '</span>' + c.title + '</div><div class="case-meta"><span>' + (c.brand || '') + '</span>' + (c.agency ? '<span class="tag">' + c.agency + '</span>' : '') + '</div><div class="case-detail">';
     if (c.goal) html += '<div class="field"><span class="label">商业目标</span>' + c.goal + '</div>';
-    if (c.problem) html += '<div class="field"><span class="label">核心问题</span>' + c.problem + '</div>';
-    if (c.insight) html += '<div class="field"><span class="label">核心洞察</span>' + c.insight + '</div>';
-    if (c.task) html += '<div class="field"><span class="label">传播任务</span>' + c.task + '</div>';
+    if (c.problem) html += '<div class="field"><span class="label">文化张力</span>' + c.problem + '</div>';
+    if (c.insight) html += '<div class="field"><span class="label">品牌写真</span>' + c.insight + '</div>';
+    if (c.task) html += '<div class="field"><span class="label">传播信息</span>' + c.task + '</div>';
     if (c.idea) html += '<div class="field"><span class="label">创意构思</span>' + c.idea + '</div>';
     if (c.link) html += '<div class="field"><a class="link" href="' + c.link + '" target="_blank" rel="noopener">🔗 查看原案例 →</a></div>';
     html += '</div></div>';
@@ -553,9 +553,9 @@ function renderDate(dateStr) {
   if (cls) {
     html += '<div class="case-card"><div class="case-title">' + cls.title + '</div><div class="case-meta"><span>' + (cls.brand || '') + '</span>' + (cls.agency ? '<span class="tag">' + cls.agency + '</span>' : '') + '</div><div class="case-detail">';
     if (cls.goal) html += '<div class="field"><span class="label">商业目标</span>' + cls.goal + '</div>';
-    if (cls.problem) html += '<div class="field"><span class="label">核心问题</span>' + cls.problem + '</div>';
-    if (cls.insight) html += '<div class="field"><span class="label">核心洞察</span>' + cls.insight + '</div>';
-    if (cls.task) html += '<div class="field"><span class="label">传播任务</span>' + cls.task + '</div>';
+    if (cls.problem) html += '<div class="field"><span class="label">文化张力</span>' + cls.problem + '</div>';
+    if (cls.insight) html += '<div class="field"><span class="label">品牌写真</span>' + cls.insight + '</div>';
+    if (cls.task) html += '<div class="field"><span class="label">传播信息</span>' + cls.task + '</div>';
     if (cls.idea) html += '<div class="field"><span class="label">创意构思</span>' + cls.idea + '</div>';
     if (cls.link) html += '<div class="field"><a class="link" href="' + cls.link + '" target="_blank" rel="noopener">🔗 查看原案例 →</a></div>';
     html += '</div></div>';
