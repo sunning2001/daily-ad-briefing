@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>每日广告案例早报 — 新鲜全球广告案例精选</title>
-<meta name="description" content="每日3个新鲜广告案例+1个经典案例，精炼拆解商业目标、核心洞察与创意构思。广告人早八点必读。">
+<meta name="description" content="每日3个新鲜广告案例+1个经典案例，精炼拆解活动背景、文化张力、品牌写真、传播信息与创意构思。广告人早八点必读。">
 <meta name="keywords" content="广告案例,广告早报,营销案例,广告创意,案例拆解,品牌营销">
 <meta property="og:title" content="每日广告案例早报">
 <meta property="og:description" content="每日3个新鲜广告案例精炼拆解。广告人早八点必读。">
@@ -540,7 +540,7 @@ function renderDate(dateStr) {
   html += '<div class="section-header"><span class="dot fresh"></span> 新鲜案例</div>';
   data.fresh.forEach(c => {
     html += '<div class="case-card"><div class="case-title"><span class="case-num">#' + c.num + '</span>' + c.title + '</div><div class="case-meta"><span>' + (c.brand || '') + '</span>' + (c.agency ? '<span class="tag">' + c.agency + '</span>' : '') + '</div><div class="case-detail">';
-    if (c.goal) html += '<div class="field"><span class="label">商业目标</span>' + c.goal + '</div>';
+    if (c.goal) html += '<div class="field"><span class="label">活动背景</span>' + c.goal + '</div>';
     if (c.problem) html += '<div class="field"><span class="label">文化张力</span>' + c.problem + '</div>';
     if (c.insight) html += '<div class="field"><span class="label">品牌写真</span>' + c.insight + '</div>';
     if (c.task) html += '<div class="field"><span class="label">传播信息</span>' + c.task + '</div>';
@@ -552,7 +552,7 @@ function renderDate(dateStr) {
   const cls = data.classic;
   if (cls) {
     html += '<div class="case-card"><div class="case-title">' + cls.title + '</div><div class="case-meta"><span>' + (cls.brand || '') + '</span>' + (cls.agency ? '<span class="tag">' + cls.agency + '</span>' : '') + '</div><div class="case-detail">';
-    if (cls.goal) html += '<div class="field"><span class="label">商业目标</span>' + cls.goal + '</div>';
+    if (cls.goal) html += '<div class="field"><span class="label">活动背景</span>' + cls.goal + '</div>';
     if (cls.problem) html += '<div class="field"><span class="label">文化张力</span>' + cls.problem + '</div>';
     if (cls.insight) html += '<div class="field"><span class="label">品牌写真</span>' + cls.insight + '</div>';
     if (cls.task) html += '<div class="field"><span class="label">传播信息</span>' + cls.task + '</div>';
